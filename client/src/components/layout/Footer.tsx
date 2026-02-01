@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Building production-grade AI systems with a research-driven approach. 
-              Specializing in AI Agents, LLMs, and privacy-first solutions.
+              Specializing in AI Agents, LLMs, Full Stack Web Development Applications and privacy-first solutions.
             </p>
           </div>
 

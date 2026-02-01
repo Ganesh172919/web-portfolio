@@ -202,7 +202,7 @@ export default function Skills() {
                   <div className="relative z-10">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-3">
-                        {skill.featured && (
+                        {'featured' in skill && skill.featured && (
                           <motion.div 
                             className="w-2.5 h-2.5 rounded-full"
                             style={{ backgroundColor: categoryColors[activeCategory] }}
