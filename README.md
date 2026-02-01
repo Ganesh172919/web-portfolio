@@ -1,98 +1,97 @@
-# Ganesh Kumar Reddy - AI Portfolio
+# Web Portfolio (Next.js)
 
-A production-grade, research-lab aesthetic portfolio website showcasing AI Architecture and GenAI Engineering expertise.
+A modern, App Router portfolio site built with Next.js + TypeScript + Tailwind. The app lives in `client/` and is configured for Vercel.
 
-## 🚀 Tech Stack
+## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS + Custom CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
 
-## 🎨 Features
+## Highlights
 
-- 🌌 **Neural Network Background** - Interactive canvas-based particle animation
-- ⌨️ **Command Palette** - Quick navigation with Ctrl+K
-- 🎯 **Interactive Skills Graph** - Category-based skill visualization
-- 📊 **Project Case Studies** - Detailed deep-dives into each project
-- 🔬 **Research Lab Section** - Current experiments and future roadmap
-- 📱 **Fully Responsive** - Mobile-first design approach
-- ⚡ **Performance Optimized** - Dynamic imports, lazy loading
+- Interactive “neural” background animation
+- Command palette for quick navigation (`Ctrl+K` / `Cmd+K`)
+- Modular sections (Hero, About, Projects, Research, Skills, Achievements, Blog, Contact)
+- Mobile-first responsive UI
 
-## 🏃 Getting Started
+## Local Development
 
 ### Prerequisites
 
-- Node.js 18+
-- npm or yarn
+- Node.js 18+ (recommended: latest LTS)
+- npm
 
-### Installation
+### Install & Run
 
 ```bash
-# Navigate to client directory
 cd client
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the portfolio.
+Open http://localhost:3000
 
-### Build for Production
+### Useful Scripts
+
+From inside `client/`:
 
 ```bash
 npm run build
+npm run start
+npm run lint
+npm run type-check
 ```
 
-## 📁 Project Structure
+## Customization
+
+- Portfolio content is centralized in `client/src/data/resume.ts`.
+- Page layout and global styling:
+	- `client/src/app/page.tsx`
+	- `client/src/app/layout.tsx`
+	- `client/src/app/globals.css`
+- Sections live in `client/src/components/sections/`.
+- Interactive components live in `client/src/components/interactive/`.
+
+## Project Structure
 
 ```
-client/
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx      # Root layout with SEO
-│   │   ├── page.tsx        # Main homepage
-│   │   └── globals.css     # Global styles & design system
-│   ├── components/
-│   │   ├── layout/         # Header, Footer
-│   │   ├── sections/       # Hero, About, Projects, etc.
-│   │   └── interactive/    # NeuralBackground, CommandPalette
-│   ├── data/
-│   │   └── resume.ts       # All portfolio data
-│   └── lib/
-│       └── utils.ts        # Utility functions
-├── tailwind.config.js      # Custom Tailwind theme
-└── package.json
+.
+├── README.md
+├── vercel.json              # Vercel build config (points to client/)
+└── client/
+		├── package.json
+		├── next.config.js
+		├── tailwind.config.js
+		├── public/
+		└── src/
+				├── app/
+				├── components/
+				│   ├── interactive/
+				│   ├── layout/
+				│   └── sections/
+				├── data/
+				└── lib/
 ```
 
-## 🎯 Sections
+## Deployment (Vercel)
 
-1. **Hero** - Animated landing with rotating tags
-2. **About** - Philosophy and education timeline
-3. **Projects** - Filterable project grid with deep-dives
-4. **Research** - Current experiments and future roadmap
-5. **Skills** - Interactive category-based visualization
-6. **Achievements** - Competitive programming and hackathons
-7. **Blog** - Knowledge sharing (coming soon)
-8. **Contact** - Form and social links
+This repo includes `vercel.json` so Vercel builds the Next.js app from `client/`.
 
-## 🚀 Deployment
+- Import the repo into Vercel.
+- Framework preset: Next.js (auto-detected)
+- No additional settings required unless you add environment variables.
 
-This project is optimized for Vercel deployment:
+Optional CLI deploy:
 
 ```bash
-# Build and deploy
+npm i -g vercel
 vercel
 ```
 
-## 📄 License
+## License
 
-MIT License
-
----
-
-Built with ❤️ by J. Ganesh Kumar Reddy
+MIT
