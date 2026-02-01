@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   FlaskConical, 
   Sparkles, 
-  Brain, 
-  Shield, 
-  ArrowRight,
+  Brain,
   Microscope,
   Lightbulb,
   Rocket
@@ -79,7 +77,7 @@ export default function Research() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            {research.current.map((item, index) => (
+            {research.current.map((item) => (
               <motion.div
                 key={item.title}
                 variants={itemVariants}
@@ -135,7 +133,7 @@ export default function Research() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            {research.future.map((item, index) => (
+            {research.future.map((item) => (
               <motion.div
                 key={item.title}
                 variants={itemVariants}
@@ -167,7 +165,7 @@ export default function Research() {
           <h4 className="heading-sm mb-4">Research Philosophy</h4>
           <p className="text-slate-400 leading-relaxed">
             I believe in learning by building. Every experiment is an opportunity to understand 
-            the nuances of AI systems—what works, what doesn't, and why. The goal is not just 
+            the nuances of AI systems—what works, what doesn&apos;t, and why. The goal is not just 
             to replicate papers, but to internalize concepts deeply enough to apply them creatively.
           </p>
         </motion.div>

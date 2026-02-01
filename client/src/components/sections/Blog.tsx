@@ -56,7 +56,7 @@ const blogPosts = [
   },
 ];
 
-const categories = ['All', 'AI Agents', 'System Design', 'GenAI'];
+
 
 export default function Blog() {
   return (
@@ -90,7 +90,7 @@ export default function Blog() {
           <Sparkles className="mx-auto mb-3 text-accent-primary" size={32} />
           <h3 className="heading-sm mb-2">Blog Launching Soon</h3>
           <p className="text-slate-400 max-w-lg mx-auto">
-            I'm currently working on detailed write-ups about AI system design, agent architectures, 
+            I&apos;m currently working on detailed write-ups about AI system design, agent architectures, 
             and lessons learned from building production AI systems.
           </p>
         </motion.div>

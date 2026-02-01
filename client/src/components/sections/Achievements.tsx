@@ -7,7 +7,6 @@ import {
   Award, 
   GraduationCap,
   Medal,
-  Star,
   Target,
   Flame
 } from 'lucide-react';
@@ -67,7 +66,7 @@ export default function Achievements() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            {achievements.coding.map((item, index) => (
+            {achievements.coding.map((item) => (
               <motion.div
                 key={item.platform}
                 variants={itemVariants}
@@ -110,7 +109,7 @@ export default function Achievements() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            {achievements.hackathons.map((item, index) => (
+            {achievements.hackathons.map((item) => (
               <motion.div
                 key={item.name}
                 variants={itemVariants}
@@ -160,7 +159,7 @@ export default function Achievements() {
             viewport={{ once: true }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
           >
-            {achievements.academic.map((item, index) => (
+            {achievements.academic.map((item) => (
               <motion.div
                 key={item.title}
                 variants={itemVariants}

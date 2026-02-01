@@ -17,7 +17,6 @@ const categories = ['All', 'AI Agents', 'Full-Stack', 'Performance'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
 
   const filteredProjects = activeCategory === 'All'
     ? projects
@@ -90,8 +89,8 @@ export default function Projects() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  onHoverStart={() => setHoveredProject(project.id)}
-                  onHoverEnd={() => setHoveredProject(null)}
+                  onHoverStart={() => {}}
+                  onHoverEnd={() => {}}
                   className={`glass-card overflow-hidden group ${
                     project.featured ? 'border-accent-primary/30' : ''
                   }`}
@@ -202,7 +201,7 @@ export default function Projects() {
         >
           <div className="glass-card p-8 max-w-2xl mx-auto">
             <p className="text-slate-300 mb-4">
-              These are just a few highlights. I'm a <span className="text-accent-primary font-semibold">passionate developer</span> who 
+              These are just a few highlights. I&apos;m a <span className="text-accent-primary font-semibold">passionate developer</span> who 
               loves building and experimenting with new technologies. Check out my GitHub for more projects, 
               experiments, and contributions!
             </p>

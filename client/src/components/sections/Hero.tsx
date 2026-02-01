@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FileText, Sparkles, MessageSquare, ArrowRight, Rocket, Brain, Code2, Zap } from 'lucide-react';
 import Image from 'next/image';
 import { personalInfo } from '@/data/resume';
@@ -33,7 +33,7 @@ function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: strin
 }
 
 // Floating icon component
-function FloatingIcon({ icon: Icon, delay, x, y }: { icon: any; delay: number; x: string; y: string }) {
+function FloatingIcon({ icon: Icon, delay, x, y }: { icon: React.ElementType; delay: number; x: string; y: string }) {
   return (
     <motion.div
       className="absolute text-accent-primary/20"
@@ -206,7 +206,7 @@ export default function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                Hello, I'm
+                Hello, I&apos;m
               </motion.span>
               <h1 className="heading-xl relative inline-block">
                 <motion.span

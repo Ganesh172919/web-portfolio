@@ -92,7 +92,7 @@ export default function About() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
         >
-          {coreHighlights.map((item, index) => (
+          {coreHighlights.map((item) => (
             <motion.div
               key={item.title}
               variants={itemVariants}
@@ -127,7 +127,7 @@ export default function About() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20"
         >
-          {philosophyItems.map((item, index) => (
+          {philosophyItems.map((item) => (
             <motion.div
               key={item.title}
               variants={itemVariants}
@@ -214,7 +214,7 @@ export default function About() {
           className="glass-card p-8 text-center max-w-3xl mx-auto"
         >
           <p className="text-lg md:text-xl text-slate-300 italic leading-relaxed">
-            "{personalInfo.summary}"
+            &quot;{personalInfo.summary}&quot;
           </p>
         </motion.div>
       </div>

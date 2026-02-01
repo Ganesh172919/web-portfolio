@@ -118,7 +118,7 @@ export default function Contact() {
           </motion.div>
           <span className="label text-accent-primary mb-3 block">Get In Touch</span>
           <h2 className="heading-lg mb-4">
-            Let's <span className="text-gradient">Connect</span>
+            Let&apos;s <span className="text-gradient">Connect</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
             Interested in collaborating on AI projects, discussing research, or just want to chat?

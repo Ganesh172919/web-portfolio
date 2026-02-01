@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Command, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Command, Github, Linkedin } from 'lucide-react';
 import { navigation, personalInfo } from '@/data/resume';
 
 export default function Header() {

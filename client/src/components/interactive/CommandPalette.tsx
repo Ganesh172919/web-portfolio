@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Command, 
   Search, 
   Home, 
   User, 
@@ -19,7 +18,7 @@ import {
   Linkedin,
   X
 } from 'lucide-react';
-import { navigation, projects, personalInfo } from '@/data/resume';
+import { projects, personalInfo } from '@/data/resume';
 
 interface CommandItem {
   id: string;
@@ -187,7 +186,7 @@ export default function CommandPalette() {
 
                   {filteredCommands.length === 0 && (
                     <div className="py-8 text-center text-slate-500">
-                      No results found for "{search}"
+                      No results found for &quot;{search}&quot;
                     </div>
                   )}
                 </div>
