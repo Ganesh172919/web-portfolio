@@ -184,6 +184,68 @@ export const projects = [
     githubUrl: "https://github.com/Ganesh172919/OnWings.v2",
     liveUrl: "#",
     featured: false
+  },
+  {
+    id: "truth-seeking-ai",
+    title: "Truth-Seeking AI with Imbalanced Datasets",
+    shortTitle: "Truth-Seeking AI",
+    subtitle: "ML Course Project - XAI Approach",
+    period: "2024",
+    technologies: ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "NumPy", "XAI"],
+    category: "AI Agents",
+    description: "Built a maximally truth-seeking AI system using tweets from an imbalanced dataset. Focused on building robust models that can handle real-world data distribution challenges.",
+    fullDescription: "An academic ML course project focused on building truth-seeking AI systems that can effectively handle imbalanced datasets. The project explores explainable AI (XAI) techniques to understand model decisions and ensure the AI system is making trustworthy predictions on tweet data.",
+    highlights: [
+      "Imbalanced dataset handling",
+      "Explainable AI (XAI) techniques",
+      "Tweet classification system",
+      "Truth-seeking model architecture",
+      "Academic ML research project"
+    ],
+    architecture: {
+      agents: [],
+      flow: "Data Collection → Preprocessing → Feature Engineering → Model Training → XAI Analysis → Predictions",
+      storage: "Jupyter Notebook with documented experiments"
+    },
+    challenges: [
+      "Handling severe class imbalance in tweet data",
+      "Implementing explainable AI for model transparency",
+      "Ensuring model generalizes beyond training distribution"
+    ],
+    githubUrl: "https://github.com/Ganesh172919/mlcp-xai-ML",
+    liveUrl: "#",
+    featured: false
+  },
+  {
+    id: "ml-random-forest",
+    title: "ML Project - Random Forest Classification",
+    shortTitle: "Random Forest ML",
+    subtitle: "Machine Learning with Ensemble Methods",
+    period: "2024",
+    technologies: ["Python", "Jupyter Notebook", "scikit-learn", "Random Forest", "Pandas", "Matplotlib"],
+    category: "AI Agents",
+    description: "A comprehensive machine learning project using Random Forest algorithm for classification tasks. Explored ensemble methods, hyperparameter tuning, and model evaluation techniques.",
+    fullDescription: "A hands-on machine learning project demonstrating proficiency with ensemble methods, particularly Random Forest classification. The project covers the complete ML pipeline from data exploration to model deployment, with emphasis on understanding why ensemble methods outperform single classifiers.",
+    highlights: [
+      "Random Forest ensemble method",
+      "Hyperparameter optimization",
+      "Feature importance analysis",
+      "Cross-validation techniques",
+      "Comprehensive model evaluation"
+    ],
+    architecture: {
+      agents: [],
+      flow: "Data Loading → EDA → Feature Engineering → Model Training → Hyperparameter Tuning → Evaluation",
+      storage: "Jupyter Notebook with visualizations"
+    },
+    challenges: [
+      "Optimizing hyperparameters for best performance",
+      "Understanding feature importance in ensemble",
+      "Avoiding overfitting while maximizing accuracy"
+    ],
+    githubUrl: "https://github.com/Ganesh172919/Ml_project",
+    liveUrl: "#",
+    featured: false
   }
 ];
 

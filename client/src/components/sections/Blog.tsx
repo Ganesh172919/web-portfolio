@@ -12,45 +12,127 @@ import {
   Layers
 } from 'lucide-react';
 
-// Placeholder blog posts structure
+// Blog posts with real content
 const blogPosts = [
   {
     id: 1,
-    title: 'Building Multi-Agent Systems with LangGraph',
-    excerpt: 'A deep dive into orchestrating multiple AI agents for complex reasoning tasks. Exploring state management and agent communication patterns.',
-    category: 'AI Agents',
-    readTime: '8 min read',
-    date: 'Coming Soon',
+    title: "I Don't Trust AI Tools — Until I Understand the System Beneath Them",
+    excerpt: "Every week, a new AI tool launches. Agents. IDE copilots. AutoGPTs. But I noticed something: the more tools I used, the less I actually understood. AI tools don't remove complexity — they hide it. If I can't explain how a system works end-to-end, I don't trust it.",
+    content: `Every week, a new AI tool launches. Agents. IDE copilots. AutoGPTs. "Write code in one click." But I noticed something: the more tools I used, the less I actually understood. That scared me.
+
+So I made a rule: If I can't explain how a system works end-to-end, I don't trust it.
+
+**What I Learned**
+
+AI tools don't remove complexity — they hide it. Under every "AI magic" button, there is:
+- A prompt strategy
+- A context window limit
+- A memory mechanism (or lack of one)
+- Deterministic code wrapped around probabilistic output
+
+Once I started tracing: User Intent → Prompt → Model → Tool Call → State Update → Output — AI became less magical and more powerful.
+
+**My Mental Shift**
+
+I stopped asking: "What tool should I use?" I started asking: "What system is this tool quietly implementing?" That single change made me faster than blindly copying AI output.
+
+**Takeaway**: If you're serious about AI — Learn systems, not shortcuts. Tools change monthly — principles don't.`,
+    category: 'AI Philosophy',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
     featured: true,
     icon: Brain,
   },
   {
     id: 2,
-    title: 'System Design for AI Applications',
-    excerpt: 'How to architect scalable AI systems that handle real-world constraints like latency, cost, and reliability.',
-    category: 'System Design',
-    readTime: '12 min read',
-    date: 'Coming Soon',
+    title: 'Why Reading AI Research Feels Impossible (And How I Fixed It)',
+    excerpt: "AI papers feel like dense math, new terminology every paragraph, and assumptions you were 'supposed to already know'. For a long time, I thought maybe I'm not research material. That was wrong.",
+    content: `**The Honest Problem**
+
+AI papers feel like: Dense math, new terminology every paragraph, assumptions you were "supposed to already know". For a long time, I thought: "Maybe I'm not research material." That was wrong.
+
+**The Real Issue**
+
+I was reading papers linearly. Research papers are not textbooks.
+
+**My 3-Pass Strategy**
+
+I now read papers like this:
+
+**Pass 1 — Narrative**: Skip equations. Ask: What problem are they solving and why does it matter?
+
+**Pass 2 — Mechanism**: Focus only on diagrams, algorithm blocks, system flow. Ignore proofs.
+
+**Pass 3 — Depth (Optional)**: Only if needed: math, ablations, edge cases. Most papers don't deserve Pass 3.
+
+**Result**
+
+Now I can: Extract ideas without memorizing formulas, rebuild concepts in code, spot weak contributions fast.
+
+**Takeaway**: You don't fail at research because of intelligence — you fail because no one teaches how to read papers.`,
+    category: 'Learning',
+    readTime: '6 min read',
+    date: 'Feb 4, 2026',
     featured: true,
-    icon: Layers,
-  },
-  {
-    id: 3,
-    title: 'Privacy-First AI: Running LLMs Locally',
-    excerpt: 'Exploring offline LLM deployment with Mistral-7B. Trade-offs, optimizations, and real-world applications.',
-    category: 'GenAI',
-    readTime: '10 min read',
-    date: 'Coming Soon',
-    featured: false,
     icon: FileText,
   },
   {
+    id: 3,
+    title: 'Building AI Systems Taught Me More Than Any Model Ever Could',
+    excerpt: "I believed mastering AI meant knowing PyTorch deeply, training models from scratch, reading cutting-edge papers daily. What actually made me better? Building end-to-end AI systems — even with a basic model.",
+    content: `**What I Thought**
+
+I believed mastering AI meant: Knowing PyTorch deeply, training models from scratch, reading cutting-edge papers daily.
+
+**What Actually Made Me Better**
+
+Building end-to-end AI systems: Prompt → Memory → Tool → API → Feedback loop. Even with a basic model.
+
+**Example Insight**
+
+When I built a simple AI agent, I learned: Most failures weren't "model issues" — they were state, context, or data flow problems. AI isn't just intelligence. It's software engineering under uncertainty.
+
+**New Definition of Skill**
+
+A strong AI engineer can: Debug reasoning, control hallucinations, design fallback logic, decide when NOT to use AI.
+
+**Takeaway**: If you want to grow fast — Build ugly systems early. Polish theory later.`,
+    category: 'AI Engineering',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
+    featured: false,
+    icon: Layers,
+  },
+  {
     id: 4,
-    title: 'LLM Fine-Tuning: A Practical Guide',
-    excerpt: 'From data preparation to deployment—a comprehensive guide to fine-tuning large language models for domain-specific tasks.',
-    category: 'GenAI',
-    readTime: '15 min read',
-    date: 'Coming Soon',
+    title: "AI Didn't Kill Coding — It Exposed Who Actually Understands It",
+    excerpt: "People ask: 'Is coding dead?' What they really mean is: 'Is memorizing syntax still valuable?' Syntax was never the real skill. AI exposed this brutally.",
+    content: `**The Fear**
+
+People ask: "Is coding dead?" What they really mean: "Is memorizing syntax still valuable?"
+
+**The Answer**
+
+Syntax was never the real skill. AI exposed this brutally.
+
+**What Still Matters**
+
+AI can generate code. But it cannot: Own architecture decisions, understand long-term tradeoffs, debug invisible assumptions, design systems for scale and failure.
+
+**The New Engineer Split**
+
+**Group A**: Copies AI output, can't explain why it works, breaks under complexity.
+
+**Group B**: Uses AI as a multiplier, reads code critically, designs before generating.
+
+Only one group survives long-term.
+
+**Takeaway**: AI didn't replace engineers. It removed the hiding place.
+
+**Final Note**: You're not meant to consume AI content endlessly, chase every new tool, or memorize everything. You're meant to think deeply, build deliberately, and question assumptions.`,
+    category: 'Industry Insights',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
     featured: false,
     icon: Sparkles,
   },
@@ -75,12 +157,12 @@ export default function Blog() {
             Blog & <span className="text-gradient">Insights</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Technical deep-dives, learnings from building AI systems, and thoughts on the 
-            future of AI engineering. Coming soon.
+            Technical deep-dives, learnings from building AI systems, and thoughts on 
+            AI engineering philosophy. Honest reflections on what actually works.
           </p>
         </motion.div>
 
-        {/* Coming Soon Banner */}
+        {/* Featured Insight Banner */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -88,10 +170,10 @@ export default function Blog() {
           className="glass-card p-6 mb-12 text-center border-accent-primary/30"
         >
           <Sparkles className="mx-auto mb-3 text-accent-primary" size={32} />
-          <h3 className="heading-sm mb-2">Blog Launching Soon</h3>
+          <h3 className="heading-sm mb-2">Thoughts on AI Engineering</h3>
           <p className="text-slate-400 max-w-lg mx-auto">
-            I&apos;m currently working on detailed write-ups about AI system design, agent architectures, 
-            and lessons learned from building production AI systems.
+            Sharing honest insights about building AI systems, reading research papers, 
+            and navigating the rapidly evolving AI landscape as an engineer.
           </p>
         </motion.div>
 
