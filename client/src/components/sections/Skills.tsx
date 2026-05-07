@@ -21,7 +21,7 @@ const categoryIcons: Record<SkillCategory, typeof Code2> = {
   aiml: Brain,
   aiAreas: Bot,
   backend: Server,
-  frontend: Layout,
+  infrastructure: Layout,
   databases: Database,
   tools: Wrench,
 };
@@ -31,7 +31,7 @@ const categoryColors: Record<SkillCategory, string> = {
   aiml: '#8b5cf6',
   aiAreas: '#ec4899',
   backend: '#10b981',
-  frontend: '#f59e0b',
+  infrastructure: '#f59e0b',
   databases: '#06b6d4',
   tools: '#64748b',
 };

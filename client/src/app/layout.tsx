@@ -3,31 +3,32 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'J. Ganesh Kumar Reddy | AI Architect & GenAI Engineer',
-  description: 'AI Architect specializing in Generative AI, AI Agents, LangChain, and production-grade AI systems. Building research-driven, privacy-first AI solutions.',
+  title: 'J. Ganesh Kumar Reddy | Generative AI Engineer & Full-Stack Developer',
+  description: 'Aspiring Generative AI Engineer specializing in LLM fine-tuning (LoRA/QLoRA), RAG pipelines, agentic AI workflows (LangChain, LangGraph), and scalable Python RESTful APIs. Active open-source contributor.',
   keywords: [
-    'AI Architect',
-    'GenAI Engineer',
+    'Generative AI Engineer',
+    'LLM Fine-Tuning',
+    'RAG Pipelines',
     'LangChain',
     'LangGraph',
     'AI Agents',
-    'Machine Learning',
+    'Python Developer',
+    'FastAPI',
     'Full Stack Developer',
-    'Python',
-    'React',
-    'LLM Fine-Tuning'
+    'LoRA QLoRA PEFT',
+    'Open Source'
   ],
   authors: [{ name: 'J. Ganesh Kumar Reddy' }],
   openGraph: {
-    title: 'J. Ganesh Kumar Reddy | AI Architect & GenAI Engineer',
-    description: 'Building production-grade AI systems with research-driven engineering',
+    title: 'J. Ganesh Kumar Reddy | Generative AI Engineer',
+    description: 'Integrating AI/LLMs into production products. Building scalable Python APIs and AI infrastructure.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'J. Ganesh Kumar Reddy | AI Architect',
-    description: 'Building production-grade AI systems with research-driven engineering',
+    title: 'J. Ganesh Kumar Reddy | Generative AI Engineer',
+    description: 'Integrating AI/LLMs into production products. Building scalable Python APIs and AI infrastructure.',
   },
   robots: {
     index: true,

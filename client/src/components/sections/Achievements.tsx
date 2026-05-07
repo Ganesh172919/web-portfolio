@@ -8,7 +8,10 @@ import {
   GraduationCap,
   Medal,
   Target,
-  Flame
+  Flame,
+  Rocket,
+  ExternalLink,
+  Star
 } from 'lucide-react';
 import { achievements } from '@/data/resume';
 
@@ -42,7 +45,7 @@ export default function Achievements() {
             Achievements & <span className="text-gradient">Recognition</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Competitive programming, hackathons, and academic excellence—proof of consistent 
+            Competitive programming excellence, hackathons, and academic achievements — proof of consistent 
             dedication and problem-solving ability.
           </p>
         </motion.div>
@@ -64,28 +67,45 @@ export default function Achievements() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {achievements.coding.map((item) => (
-              <motion.div
+              <motion.a
                 key={item.platform}
+                href={'url' in item ? item.url : '#'}
+                target={('url' in item && item.url !== '#') ? '_blank' : undefined}
+                rel="noopener noreferrer"
                 variants={itemVariants}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="glass-card p-6 text-center group"
+                whileHover={{ scale: 1.03, y: -5 }}
+                className="glass-card p-6 text-center group cursor-pointer relative overflow-hidden"
                 style={{
                   borderColor: `${item.color}20`,
                 }}
               >
-                <div 
-                  className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center"
-                  style={{ backgroundColor: `${item.color}15` }}
-                >
-                  <Target size={32} style={{ color: item.color }} />
+                {/* Hover glow */}
+                <motion.div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{ background: `radial-gradient(circle at center, ${item.color}15, transparent 70%)` }}
+                />
+                
+                <div className="relative z-10">
+                  <div 
+                    className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center"
+                    style={{ backgroundColor: `${item.color}15` }}
+                  >
+                    <Target size={32} style={{ color: item.color }} />
+                  </div>
+                  <h4 className="font-semibold text-white text-lg mb-1">{item.platform}</h4>
+                  <div className="text-xl font-bold text-gradient mb-1">{item.stats}</div>
+                  <div className="text-sm text-slate-400">{item.rating}</div>
+                  {'url' in item && item.url !== '#' && (
+                    <ExternalLink 
+                      size={14} 
+                      className="mx-auto mt-3 text-slate-500 group-hover:text-accent-primary transition-colors" 
+                    />
+                  )}
                 </div>
-                <h4 className="font-semibold text-white text-lg mb-1">{item.platform}</h4>
-                <div className="text-2xl font-bold text-gradient mb-1">{item.stats}</div>
-                <div className="text-sm text-slate-400">{item.rating}</div>
-              </motion.div>
+              </motion.a>
             ))}
           </motion.div>
         </div>
@@ -140,6 +160,40 @@ export default function Achievements() {
           </motion.div>
         </div>
 
+        {/* Startup & Open Source */}
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-3 mb-8"
+          >
+            <Rocket className="text-purple-500" size={24} />
+            <h3 className="heading-sm">Startup & Open Source</h3>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-card p-6 border-purple-500/20 hover:border-purple-500/40 transition-all relative overflow-hidden"
+          >
+            <motion.div
+              className="absolute inset-0 opacity-20"
+              style={{ background: 'radial-gradient(circle at top right, rgba(139, 92, 246, 0.2), transparent 60%)' }}
+            />
+            <div className="relative z-10 flex items-start gap-4">
+              <div className="p-3 rounded-xl bg-purple-500/10 shrink-0">
+                <Star size={24} className="text-purple-400" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white text-lg mb-2">{achievements.startup.title}</h4>
+                <p className="text-slate-400 leading-relaxed">{achievements.startup.description}</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
         {/* Academic Excellence */}
         <div>
           <motion.div
@@ -185,9 +239,9 @@ export default function Achievements() {
         >
           {[
             { value: '500+', label: 'Problems Solved', icon: Code },
-            { value: '1510', label: 'LeetCode Rating', icon: Target },
+            { value: 'Knight', label: 'LeetCode Rank', icon: Target },
             { value: 'Top 5%', label: 'JEE Mains', icon: Trophy },
-            { value: 'Participant', label: 'SIH 2025', icon: Award },
+            { value: '4★', label: 'CodeChef Rating', icon: Award },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

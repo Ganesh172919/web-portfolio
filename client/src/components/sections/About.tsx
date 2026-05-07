@@ -79,8 +79,8 @@ export default function About() {
             How I Think About <span className="text-gradient">AI Systems</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            I approach AI engineering with a systems mindset—understanding how components 
-            interact, fail, and scale to build robust, production-ready solutions.
+            I approach AI engineering with a systems mindset—understanding how to integrate 
+            LLMs into production products, build scalable APIs, and create robust AI infrastructure.
           </p>
         </motion.div>
 

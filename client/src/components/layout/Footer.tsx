@@ -24,12 +24,12 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-semibold text-lg">{personalInfo.name}</div>
-                <div className="text-sm text-slate-400">AI Architect & GenAI Engineer</div>
+                <div className="text-sm text-slate-400">Generative AI Engineer</div>
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Building production-grade AI systems with a research-driven approach. 
-              Specializing in AI Agents, LLMs, Full Stack Web Development Applications and privacy-first solutions.
+              Aspiring Generative AI Engineer integrating AI/LLMs into production products. 
+              Specializing in RAG pipelines, agentic AI workflows, and scalable Python APIs.
             </p>
           </div>
 

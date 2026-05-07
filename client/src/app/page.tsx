@@ -9,6 +9,9 @@ import Hero from '@/components/sections/Hero';
 const About = dynamic(() => import('@/components/sections/About'), {
   loading: () => <SectionLoader />,
 });
+const Experience = dynamic(() => import('@/components/sections/Experience'), {
+  loading: () => <SectionLoader />,
+});
 const Projects = dynamic(() => import('@/components/sections/Projects'), {
   loading: () => <SectionLoader />,
 });
@@ -74,6 +77,9 @@ export default function Home() {
         
         {/* About / Philosophy Section */}
         <About />
+        
+        {/* Technical Experience Section */}
+        <Experience />
         
         {/* Projects Section */}
         <Projects />

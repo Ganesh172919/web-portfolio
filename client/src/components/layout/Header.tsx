@@ -70,7 +70,7 @@ export default function Header() {
               <div className="font-semibold text-white group-hover:text-accent-primary transition-colors">
                 {personalInfo.firstName}
               </div>
-              <div className="text-xs text-slate-400">AI Architect</div>
+              <div className="text-xs text-slate-400">Generative AI Engineer</div>
             </div>
           </motion.a>
 

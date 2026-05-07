@@ -12,23 +12,23 @@ export const personalInfo = {
   linkedinUrl: "https://www.linkedin.com/in/j-ganesh-kumar-reddy-b65693274",
   location: "India",
   roles: [
-    "AI Architect",
-    "GenAI Engineer", 
-    "Backend Developer"
+    "Generative AI Engineer",
+    "Full-Stack Developer",
+    "Open Source Contributor"
   ],
   rotatingTags: [
     "Building AI Agents",
-    "LLM Systems",
-    "Production-grade AI",
-    "Research-Driven Engineering",
+    "LLM Fine-Tuning & RAG",
+    "Production-grade APIs",
     "Multi-Agent Architectures",
-    "Privacy-First AI"
+    "Privacy-First AI",
+    "Open Source Builder"
   ],
-  summary: "AI Architect and problem solver with a research-first mindset. Pursuing B.Tech in Data Science & AI with a Minor in Generative AI (9.33 CGPA). Built 4+ production-grade AI systems including multi-agent financial advisors and privacy-preserving synthetic data generators. Solved 500+ DSA problems demonstrating strong algorithmic thinking. Passionate about bridging cutting-edge research with practical, scalable implementations.",
+  summary: "Aspiring Generative AI Engineer pursuing B.Tech in Data Science & AI with a Minor in Generative AI (9.33 CGPA) from IIIT Dharwad. Hands-on experience integrating AI/LLMs into production products, building scalable Python RESTful APIs (FastAPI, Flask), and developing AI infrastructure including observability pipelines and caching mechanisms. Proficient in prompt engineering, model evaluation & fine-tuning (LoRA, QLoRA, PEFT), RAG pipelines, and agentic AI workflows (LangChain, LangGraph). Active open-source contributor with a startup founder mindset.",
   highlights: {
-    researcher: "Research-first approach with hands-on experiments in LLM fine-tuning, hallucination mitigation, and large context window optimization. Deep understanding of transformer architectures and agent reasoning patterns.",
-    learner: "Exceptional academic performance with 9.33 CGPA in GenAI Minor covering AI/ML/DL, LLMs, and AI Agents. Self-taught LangChain, LangGraph, and advanced prompting techniques. 500+ competitive programming problems solved.",
-    builder: "Shipped 4+ production-ready AI projects—from multi-agent financial systems to offline LLM deployments. 40% performance optimization on onWings. Focus on clean architecture, scalability, and real-world constraints."
+    researcher: "Research-first approach with hands-on experiments in LLM fine-tuning (LoRA, QLoRA, PEFT), model evaluation with BLEU/ROUGE metrics, hallucination mitigation, and large context window optimization. Deep understanding of transformer architectures and agent reasoning patterns.",
+    learner: "Exceptional academic performance with 9.33 CGPA in GenAI Minor covering AI/ML/DL, LLMs, and AI Agents. Self-taught LangChain, LangGraph, and advanced prompting techniques. 500+ competitive programming problems solved — LeetCode Knight, CodeChef 4★.",
+    builder: "Shipped 4+ production-ready AI projects — from multi-agent financial systems to offline LLM deployments. Built 100+ REST API endpoints, AI observability pipelines, and distributed job processing systems. Focus on clean architecture, scalability, and real-world constraints."
   }
 };
 
@@ -65,27 +65,27 @@ export const projects = [
     id: "personal-finance-assistant",
     title: "Personal Finance Assistant",
     shortTitle: "Finance AI Agent",
-    subtitle: "Multi-Agent Financial Intelligence System",
+    subtitle: "AI-Powered Full-Stack Platform",
     period: "Aug 2025 - Nov 2025",
-    technologies: ["Python", "LangChain", "LangGraph", "React.js", "Node.js", "Express.js", "MongoDB"],
+    technologies: ["Python", "LangChain", "LangGraph", "FastAPI", "Google Gemini API", "React.js", "Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "Docker", "Prometheus", "OpenTelemetry"],
     category: "AI Agents",
-    description: "Developed financial AI agents using LangChain and LangGraph to provide personalized financial recommendations and automated planning.",
-    fullDescription: "A sophisticated multi-agent system that leverages LangChain and LangGraph to create intelligent financial planning assistants. The system features autonomous agents that can analyze spending patterns, suggest budgets, and provide investment recommendations through natural conversation.",
+    description: "Integrated a multi-agent AI Copilot (LangGraph DAG routing + Google Gemini LLM) into the product, enabling AI-driven anomaly detection, budget reallocation, receipt OCR, and atomic multi-step financial plans.",
+    fullDescription: "A sophisticated multi-agent system that leverages LangChain and LangGraph to create intelligent financial planning assistants. Features autonomous agents for anomaly detection, budget reallocation, receipt OCR, and multi-step financial plans. Built with 100+ RESTful API endpoints, distributed job processing with BullMQ, and comprehensive AI observability with Prometheus + OpenTelemetry.",
     highlights: [
-      "Multi-agent reasoning with LangGraph",
-      "Personalized financial recommendations",
-      "Automated planning intelligence",
-      "Responsive React dashboard",
-      "Real-time data synchronization"
+      "Multi-agent AI Copilot with LangGraph DAG routing",
+      "100+ RESTful API endpoints with Zod validation",
+      "Redis caching + Prometheus + OpenTelemetry observability",
+      "BullMQ distributed job processing",
+      "JWT/OAuth2, TOTP 2FA, CSRF protection"
     ],
     architecture: {
-      agents: ["Budget Analyzer", "Investment Advisor", "Spending Tracker", "Goal Planner"],
+      agents: ["Budget Analyzer", "Anomaly Detector", "Receipt OCR", "Goal Planner"],
       flow: "User Query → Orchestrator Agent → Specialized Agents → Response Synthesis",
-      storage: "MongoDB for persistent memory and transaction history"
+      storage: "MongoDB (48 Mongoose models) + Redis caching"
     },
     challenges: [
       "Coordinating multiple agents for coherent responses",
-      "Handling real-time financial data updates",
+      "Building AI observability with Prometheus + OpenTelemetry",
       "Ensuring accuracy in financial calculations"
     ],
     githubUrl: "https://github.com/Ganesh172919/personal-finance",
@@ -93,157 +93,126 @@ export const projects = [
     featured: true
   },
   {
-    id: "synthetic-data-generator",
-    title: "Synthetic Data Generator",
-    shortTitle: "Synthetic Data Gen",
-    subtitle: "Privacy-First Offline AI System",
-    period: "Dec 2025 - Jan 2026",
-    technologies: ["Python", "AI Agents", "FastAPI", "React.js", "Mistral-7B"],
-    category: "AI Agents",
-    description: "Designed and developed an offline synthetic data generation system using a locally hosted Mistral-7B LLM, eliminating dependency on external APIs and ensuring complete data privacy.",
-    fullDescription: "An innovative privacy-first synthetic data generation platform that runs entirely offline using a locally hosted Mistral-7B model. The system employs specialized AI agents to interpret user-defined schemas, enforce constraints, and generate high-quality tabular datasets without any external API calls.",
-    highlights: [
-      "Locally hosted Mistral-7B LLM",
-      "Zero external API dependencies",
-      "Agent-based schema interpretation",
-      "Constraint enforcement system",
-      "High-quality tabular data generation"
-    ],
-    architecture: {
-      agents: ["Schema Interpreter", "Constraint Validator", "Data Generator", "Quality Checker"],
-      flow: "Schema Input → Agent Collaboration → Data Generation → Validation → Output",
-      storage: "Local file system with export options"
-    },
-    challenges: [
-      "Optimizing Mistral-7B for local hardware",
-      "Maintaining data quality without cloud resources",
-      "Complex constraint handling"
-    ],
-    githubUrl: "https://github.com/Ganesh172919/Synthetic-Data-Generator-1",
-    liveUrl: "#",
-    featured: true
-  },
-  {
-    id: "medical-chat-application",
-    title: "Medical Chat Application",
-    shortTitle: "Medical Chat",
-    subtitle: "Real-Time ML-Powered Healthcare Chat",
+    id: "medical-llm-application",
+    title: "Medical LLM Application",
+    shortTitle: "Medical LLM",
+    subtitle: "Domain Chatbot with Fine-Tuned LLM & RAG",
     period: "Mar 2025 - Apr 2025",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "WebSockets", "JWT"],
-    category: "Full-Stack",
-    description: "Integrated WebSockets to enable real-time message updates and connected a trained medical ML model via API to provide specialized, context-aware responses.",
-    fullDescription: "A comprehensive medical chat application featuring real-time communication through WebSockets, secure JWT-based authentication, and integration with a trained ML model for medical queries. The system efficiently stores and retrieves chat histories with a well-structured database schema.",
+    technologies: ["Python", "PyTorch", "HuggingFace Transformers", "LoRA", "QLoRA", "PEFT", "Google Gemini API", "PubMed API", "FastAPI", "MongoDB", "WebSocket", "JWT", "pytest"],
+    category: "AI Agents",
+    description: "Fine-tuned domain-specific medical LLMs using LoRA, QLoRA, and PEFT on the MEDQUAD dataset with BLEU/ROUGE evaluation metrics. Built multi-stage RAG pipeline combining ChromaDB vector retrieval and PubMed API.",
+    fullDescription: "A comprehensive medical AI application featuring fine-tuned domain-specific LLMs, multi-stage RAG pipeline with ChromaDB and PubMed API, NLP-based query classification for intelligent routing between local model, Gemini API, and PubMed retrieval. Includes WebSocket streaming, JWT authentication, rate limiting, and comprehensive pytest test suite.",
     highlights: [
-      "Real-time WebSocket messaging",
-      "Medical ML model integration",
-      "JWT-based secure authentication",
-      "Context-aware responses",
-      "Efficient chat history management"
+      "LLM fine-tuning with LoRA, QLoRA, PEFT on MEDQUAD",
+      "BLEU/ROUGE metrics for model evaluation",
+      "Multi-stage RAG: ChromaDB + PubMed API",
+      "NLP-based query classification & routing",
+      "WebSocket streaming + JWT auth + rate limiting"
     ],
     architecture: {
       agents: [],
-      flow: "User Message → WebSocket Server → ML Model API → Response → Real-time Delivery",
-      storage: "MongoDB with optimized schema for chat histories"
+      flow: "Query → NLP Classification → Route (Local LLM / Gemini / PubMed) → RAG Pipeline → Response",
+      storage: "MongoDB + ChromaDB (Vector DB)"
     },
     challenges: [
-      "Ensuring medical response accuracy",
-      "Managing WebSocket connections at scale",
-      "Secure storage of sensitive health data"
+      "Optimizing fine-tuning with limited compute",
+      "Building graceful degradation to Gemini API fallback",
+      "Ensuring medical response accuracy"
     ],
     githubUrl: "https://github.com/Ganesh172919/React-App-LLM",
     liveUrl: "#",
     featured: true
   },
   {
-    id: "onwings-flight-booking",
-    title: "onWings - Flight Booking System",
-    shortTitle: "onWings",
-    subtitle: "High-Performance Flight Booking Platform",
-    period: "Oct 2025 - Nov 2025",
-    technologies: ["React.js", "JavaScript", "HTML", "CSS"],
-    category: "Performance",
-    description: "Developed frontend features for multi-step flight booking with React.js, implementing dynamic form handling and state management. Optimized application performance, reducing page loading time by 40% through code splitting and lazy loading.",
-    fullDescription: "A highly optimized flight booking platform built with React.js, featuring multi-step booking flows, dynamic form validation, and advanced state management. The project achieved a 40% reduction in page load times through strategic implementation of code splitting and lazy loading techniques.",
+    id: "synthetic-data-generator",
+    title: "Synthetic Data Generator",
+    shortTitle: "Synthetic Data Gen",
+    subtitle: "Automated LLM-Driven Data Pipeline",
+    period: "Dec 2025 - Jan 2026",
+    technologies: ["Python", "Mistral-7B-Instruct", "LoRA", "PEFT", "LLM Fine-Tuning", "Docker Compose", "Node.js", "Express.js", "React.js"],
+    category: "AI Agents",
+    description: "Built a fully automated data generation pipeline where Mistral-7B (4-bit quantized) autonomously handles schema inference, domain adaptation, quality filtering, and deduplication — achieving 167 Q&A pairs/min on a T4 GPU.",
+    fullDescription: "An AI-native product built from the ground up: a fully automated data generation pipeline with Mistral-7B (4-bit quantized) handling schema inference, domain adaptation, quality filtering, and MD5-based deduplication. Features async buffered writing, checkpoint-based crash recovery, FlashAttention 2, and multi-format export (JSONL/CSV/JSON) compatible with HuggingFace fine-tuning pipelines.",
     highlights: [
-      "40% page load time reduction",
-      "Multi-step booking workflow",
-      "Dynamic form handling",
-      "Code splitting & lazy loading",
-      "Optimized React state management"
+      "167 Q&A pairs/min with Mistral-7B (4-bit quantized)",
+      "Zero external API calls — complete data privacy",
+      "FlashAttention 2 + checkpoint-based crash recovery",
+      "MD5-based deduplication + async buffered I/O",
+      "Docker Compose deployment with 6 domain templates"
     ],
     architecture: {
-      agents: [],
-      flow: "Search → Flight Selection → Passenger Details → Payment → Confirmation",
-      storage: "Client-side state with session persistence"
+      agents: ["Schema Interpreter", "Domain Adapter", "Quality Filter", "Deduplication Engine"],
+      flow: "Schema Input → LLM Generation → Quality Filtering → Deduplication → Multi-format Export",
+      storage: "Local file system + JSONL/CSV/JSON export"
     },
     challenges: [
-      "Managing complex multi-step form state",
-      "Optimizing bundle size for fast loads",
-      "Handling edge cases in booking flow"
+      "Optimizing Mistral-7B with 4-bit quantization for T4 GPU",
+      "Building fault-tolerant pipeline with crash recovery",
+      "Maintaining data quality without cloud resources"
     ],
-    githubUrl: "https://github.com/Ganesh172919/OnWings.v2",
+    githubUrl: "https://github.com/Ganesh172919/Synthetic-Data-Generator-1",
     liveUrl: "#",
-    featured: false
+    featured: true
   },
   {
-    id: "truth-seeking-ai",
-    title: "Truth-Seeking AI with Imbalanced Datasets",
-    shortTitle: "Truth-Seeking AI",
-    subtitle: "ML Course Project - XAI Approach",
+    id: "ml-pipelines-xai",
+    title: "ML Pipelines — Explainable AI & Predictive Analytics",
+    shortTitle: "ML Pipelines",
+    subtitle: "End-to-End ML with SHAP & LIME",
     period: "2024",
-    technologies: ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "NumPy", "XAI"],
-    category: "AI Agents",
-    description: "Built a maximally truth-seeking AI system using tweets from an imbalanced dataset. Focused on building robust models that can handle real-world data distribution challenges.",
-    fullDescription: "An academic ML course project focused on building truth-seeking AI systems that can effectively handle imbalanced datasets. The project explores explainable AI (XAI) techniques to understand model decisions and ensure the AI system is making trustworthy predictions on tweet data.",
+    technologies: ["Python", "scikit-learn", "PyTorch", "SHAP", "LIME", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    category: "Full-Stack",
+    description: "Developed end-to-end machine learning pipelines for fraud detection, stroke prediction, and time-series forecasting with SHAP & LIME explainability, statistical analysis, feature engineering, and hyperparameter tuning.",
+    fullDescription: "End-to-end machine learning pipelines covering fraud detection, stroke prediction, and time-series forecasting. Features statistical analysis, feature engineering, hyperparameter tuning with scikit-learn and PyTorch. Applied SHAP & LIME for global and per-instance explainability with comprehensive data visualizations.",
     highlights: [
-      "Imbalanced dataset handling",
-      "Explainable AI (XAI) techniques",
-      "Tweet classification system",
-      "Truth-seeking model architecture",
-      "Academic ML research project"
+      "Fraud detection & stroke prediction models",
+      "SHAP & LIME explainability analysis",
+      "Statistical feature engineering",
+      "Comprehensive data visualizations",
+      "Hyperparameter tuning pipelines"
     ],
     architecture: {
       agents: [],
-      flow: "Data Collection → Preprocessing → Feature Engineering → Model Training → XAI Analysis → Predictions",
+      flow: "Data Loading → EDA → Feature Engineering → Model Training → SHAP/LIME Analysis → Evaluation",
       storage: "Jupyter Notebook with documented experiments"
     },
     challenges: [
-      "Handling severe class imbalance in tweet data",
-      "Implementing explainable AI for model transparency",
-      "Ensuring model generalizes beyond training distribution"
+      "Handling class imbalance in fraud detection",
+      "Implementing per-instance SHAP explanations",
+      "Optimizing time-series forecasting accuracy"
     ],
-    githubUrl: "https://github.com/Ganesh172919/mlcp-xai-ML",
+    githubUrl: "https://github.com/Ganesh172919",
     liveUrl: "#",
     featured: false
   },
   {
-    id: "ml-random-forest",
-    title: "ML Project - Random Forest Classification",
-    shortTitle: "Random Forest ML",
-    subtitle: "Machine Learning with Ensemble Methods",
-    period: "2024",
-    technologies: ["Python", "Jupyter Notebook", "scikit-learn", "Random Forest", "Pandas", "Matplotlib"],
-    category: "AI Agents",
-    description: "A comprehensive machine learning project using Random Forest algorithm for classification tasks. Explored ensemble methods, hyperparameter tuning, and model evaluation techniques.",
-    fullDescription: "A hands-on machine learning project demonstrating proficiency with ensemble methods, particularly Random Forest classification. The project covers the complete ML pipeline from data exploration to model deployment, with emphasis on understanding why ensemble methods outperform single classifiers.",
+    id: "competitive-programming",
+    title: "Problem Solving & Competitive Programming",
+    shortTitle: "Competitive Coding",
+    subtitle: "500+ Solutions Across Platforms",
+    period: "2023 - Present",
+    technologies: ["C++", "Python", "Algorithms", "Data Structures", "Dynamic Programming", "Graph Theory", "Segment Trees"],
+    category: "Performance",
+    description: "Curated repository of 500+ competitive programming solutions across LeetCode, CodeChef, and Codeforces — covering dynamic programming, graph algorithms, segment trees, binary search, and number theory.",
+    fullDescription: "A comprehensive repository of 500+ competitive programming solutions spanning LeetCode (Knight, 340+ problems, WC 435 Rank 553), CodeChef (4★, Rating 1960), and Codeforces (Pupil, Rating 1227). Covers dynamic programming, graph algorithms, segment trees, binary search, number theory, and advanced data structures.",
     highlights: [
-      "Random Forest ensemble method",
-      "Hyperparameter optimization",
-      "Feature importance analysis",
-      "Cross-validation techniques",
-      "Comprehensive model evaluation"
+      "LeetCode Knight — 340+ problems, WC 435 Rank 553",
+      "CodeChef 4★ — Rating 1960",
+      "Codeforces Pupil — Rating 1227",
+      "500+ problems across platforms",
+      "DP, graphs, segment trees, number theory"
     ],
     architecture: {
       agents: [],
-      flow: "Data Loading → EDA → Feature Engineering → Model Training → Hyperparameter Tuning → Evaluation",
-      storage: "Jupyter Notebook with visualizations"
+      flow: "Problem Analysis → Algorithm Design → Implementation → Optimization",
+      storage: "GitHub repository with categorized solutions"
     },
     challenges: [
-      "Optimizing hyperparameters for best performance",
-      "Understanding feature importance in ensemble",
-      "Avoiding overfitting while maximizing accuracy"
+      "Solving hard graph theory problems",
+      "Optimizing solutions for tight time limits",
+      "Implementing advanced data structures from scratch"
     ],
-    githubUrl: "https://github.com/Ganesh172919/Ml_project",
+    githubUrl: "https://github.com/Ganesh172919",
     liveUrl: "#",
     featured: false
   }
@@ -256,47 +225,56 @@ export const skills = {
       { name: "Python", level: 95, featured: true },
       { name: "JavaScript", level: 90, featured: true },
       { name: "TypeScript", level: 85, featured: true },
-      { name: "C++", level: 80 },
+      { name: "C++", level: 85, featured: true },
+      { name: "Java", level: 75 },
       { name: "C", level: 75 },
-      { name: "Java", level: 75 }
+      { name: "Scala", level: 50 }
     ]
   },
   aiml: {
-    title: "AI/ML Frameworks",
+    title: "AI / ML",
     items: [
-      { name: "PyTorch", level: 88, featured: true },
-      { name: "LangChain", level: 92, featured: true },
-      { name: "LangGraph", level: 90, featured: true },
-      { name: "Transformers", level: 85, featured: true },
-      { name: "TensorFlow", level: 80 },
-      { name: "scikit-learn", level: 85 }
+      { name: "Generative AI & LLMs", level: 92, featured: true },
+      { name: "Prompt Engineering", level: 95, featured: true },
+      { name: "LLM Fine-Tuning (LoRA/QLoRA/PEFT)", level: 88, featured: true },
+      { name: "RAG Pipelines", level: 90, featured: true },
+      { name: "Model Evaluation", level: 85, featured: true },
+      { name: "NLP", level: 85 },
+      { name: "Explainable AI (SHAP/LIME)", level: 80 }
     ]
   },
   aiAreas: {
-    title: "AI/ML Areas",
+    title: "AI Frameworks",
     items: [
-      { name: "Generative AI", level: 92, featured: true },
-      { name: "AI Agents", level: 95, featured: true },
-      { name: "LLM Fine-Tuning", level: 88, featured: true },
-      { name: "Deep Learning", level: 85 },
-      { name: "Machine Learning", level: 88 }
+      { name: "LangChain", level: 92, featured: true },
+      { name: "LangGraph", level: 90, featured: true },
+      { name: "HuggingFace Transformers", level: 88, featured: true },
+      { name: "PyTorch", level: 88, featured: true },
+      { name: "TensorFlow", level: 80 },
+      { name: "scikit-learn", level: 88, featured: true }
     ]
   },
   backend: {
-    title: "Backend Development",
+    title: "Back-End & APIs",
     items: [
-      { name: "Node.js", level: 90, featured: true },
-      { name: "Express.js", level: 88 },
-      { name: "FastAPI", level: 85, featured: true },
-      { name: "REST APIs", level: 90 }
+      { name: "Python (FastAPI, Flask)", level: 90, featured: true },
+      { name: "Node.js / Express.js", level: 88, featured: true },
+      { name: "RESTful API Design", level: 92, featured: true },
+      { name: "WebSocket", level: 82 },
+      { name: "JWT/OAuth2", level: 85 },
+      { name: "BullMQ (Message Queues)", level: 78 },
+      { name: "Redis", level: 82, featured: true }
     ]
   },
-  frontend: {
-    title: "Frontend Development",
+  infrastructure: {
+    title: "AI Infrastructure",
     items: [
-      { name: "React.js", level: 88, featured: true },
-      { name: "HTML/CSS", level: 85 },
-      { name: "Next.js", level: 80 }
+      { name: "Docker / Docker Compose", level: 85, featured: true },
+      { name: "Prometheus", level: 78, featured: true },
+      { name: "OpenTelemetry", level: 75 },
+      { name: "4-bit Quantization", level: 80 },
+      { name: "FlashAttention", level: 75 },
+      { name: "CI/CD Pipelines", level: 78 }
     ]
   },
   databases: {
@@ -304,19 +282,21 @@ export const skills = {
     items: [
       { name: "MongoDB", level: 88, featured: true },
       { name: "PostgreSQL", level: 82 },
-      { name: "MySQL", level: 80 }
+      { name: "ChromaDB (Vector DB)", level: 80, featured: true },
+      { name: "Redis", level: 82, featured: true },
+      { name: "MySQL", level: 78 }
     ]
   },
   tools: {
-    title: "Tools & Platforms",
+    title: "Testing & Tools",
     items: [
-      { name: "GitHub", level: 92 },
-      { name: "Jupyter", level: 90 },
-      { name: "VS Code", level: 95 },
-      { name: "Google Colab", level: 88 },
-      { name: "Pandas", level: 90 },
-      { name: "NumPy", level: 88 },
-      { name: "Tableau", level: 75 }
+      { name: "pytest / unittest", level: 85, featured: true },
+      { name: "Git & GitHub", level: 92 },
+      { name: "Linux", level: 85 },
+      { name: "Pandas / NumPy", level: 90 },
+      { name: "Matplotlib / Seaborn", level: 82 },
+      { name: "AWS (basics)", level: 65 },
+      { name: "Hugging Face Hub", level: 80 }
     ]
   }
 };
@@ -325,24 +305,35 @@ export const achievements = {
   coding: [
     {
       platform: "LeetCode",
-      stats: "272+ Problems Solved",
-      rating: "1510 Rating",
+      stats: "Knight · 340+ Solved",
+      rating: "Weekly Contest 435 — Rank 553",
       icon: "code",
-      color: "#FFA116"
+      color: "#FFA116",
+      url: "https://leetcode.com/u/ganeshrgk1/"
     },
     {
       platform: "CodeChef",
-      stats: "Active Competitor",
-      rating: "1250 Rating",
+      stats: "4★ · Rating 1960",
+      rating: "Active Competitor",
       icon: "chef-hat",
-      color: "#5B4638"
+      color: "#5B4638",
+      url: "https://www.codechef.com/users/ganesh_352004"
+    },
+    {
+      platform: "Codeforces",
+      stats: "Pupil · Rating 1227",
+      rating: "Active Competitor",
+      icon: "trophy",
+      color: "#318CE7",
+      url: "https://codeforces.com/profile/Ganesh_iiit"
     },
     {
       platform: "Total Problems",
-      stats: "500+ Problems Solved",
-      rating: "Across Platforms",
+      stats: "500+ Solved",
+      rating: "Across All Platforms",
       icon: "trophy",
-      color: "#6366f1"
+      color: "#6366f1",
+      url: "#"
     }
   ],
   hackathons: [
@@ -386,8 +377,50 @@ export const achievements = {
       achievement: "Top 1%",
       icon: "star"
     }
-  ]
+  ],
+  startup: {
+    title: "Startup & Open Source",
+    description: "Founder of an open-source multi-agent AI startup (open-sourcing LangGraph financial copilot); active open-source contributor to NanaChat and community AI projects."
+  }
 };
+
+export const technicalExperience = [
+  {
+    id: 1,
+    title: "AI Engineering & Product Integration",
+    period: "2024 – Present",
+    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Google Gemini", "HuggingFace Transformers", "LoRA", "QLoRA", "Prompt Engineering", "Model Evaluation", "Docker"],
+    highlights: [
+      "Integrated AI technologies into existing products and built AI-native applications from the ground up across 4+ repositories — conducting prompt engineering, model evaluation, and LLM fine-tuning (LoRA/QLoRA/PEFT) for domain-specific use cases.",
+      "Orchestrated multi-agent AI systems via LangGraph DAG routing and built multi-stage RAG pipelines with vector retrieval.",
+      "Developed AI infrastructure including observability tools (Prometheus, OpenTelemetry), Redis caching mechanisms, checkpoint-based crash recovery, and 4-bit quantized model serving."
+    ]
+  },
+  {
+    id: 2,
+    title: "Software & API Development",
+    period: "2024 – Present",
+    technologies: ["Python", "FastAPI", "Node.js", "Express.js", "React.js", "TypeScript", "MongoDB", "Redis", "BullMQ", "JWT/OAuth2", "pytest", "Docker"],
+    highlights: [
+      "Designed and developed RESTful APIs using Python to integrate AI models seamlessly into applications; built production-grade back-end systems (100+ endpoints, Zod validation, versioned routing) with clean layered architecture and SOLID principles.",
+      "Collaborated with cross-functional teams and participated in code reviews; wrote and maintained unit tests (pytest, unittest) to ensure AI model reliability and quality assurance.",
+      "Applied best practices in coding, testing, and documentation across all projects; optimized AI applications for performance, scalability, and security."
+    ]
+  }
+];
+
+export const openSourceContributions = [
+  {
+    name: "NanaChat — Open-Source AI Chat Platform",
+    description: "Contributed to NanaChat, an open-source AI-powered chat platform — implementing feature enhancements, performance improvements, and bug fixes across the full-stack codebase.",
+    githubUrl: "https://github.com/Ganesh172919"
+  },
+  {
+    name: "Multi-Agent LangGraph Financial AI Copilot",
+    description: "Actively building toward open-sourcing the multi-agent LangGraph financial AI copilot as a standalone open-source product — demonstrating commitment to community-driven AI tooling.",
+    githubUrl: "https://github.com/Ganesh172919/personal-finance"
+  }
+];
 
 export const research = {
   current: [
@@ -429,6 +462,7 @@ export const research = {
 export const navigation = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Research", href: "#research" },
   { name: "Skills", href: "#skills" },
@@ -455,7 +489,17 @@ export const socialLinks = [
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/reddy_1859994",
+    url: "https://leetcode.com/u/ganeshrgk1/",
+    icon: "code"
+  },
+  {
+    name: "CodeChef",
+    url: "https://www.codechef.com/users/ganesh_352004",
+    icon: "code"
+  },
+  {
+    name: "Codeforces",
+    url: "https://codeforces.com/profile/Ganesh_iiit",
     icon: "code"
   }
 ];

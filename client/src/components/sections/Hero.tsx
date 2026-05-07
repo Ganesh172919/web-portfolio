@@ -111,9 +111,9 @@ export default function Hero() {
 
   const stats = [
     { value: 500, suffix: '+', label: 'Problems Solved', icon: Code2, color: '#6366f1' },
-    { value: 4, suffix: '+', label: 'AI Projects', icon: Brain, color: '#8b5cf6' },
+    { value: 4, suffix: '+', label: 'AI Projects Built', icon: Brain, color: '#8b5cf6' },
     { value: 9.33, suffix: '', label: 'GenAI CGPA', icon: Zap, color: '#a855f7' },
-    { value: 2025, suffix: '', label: 'SIH Participant', icon: Rocket, color: '#ec4899' },
+    { value: 100, suffix: '+', label: 'REST API Endpoints', icon: Rocket, color: '#ec4899' },
   ];
 
   return (
@@ -270,28 +270,28 @@ export default function Hero() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed"
             >
-              Building{' '}
+              Integrating{' '}
               <span className="text-white font-semibold relative inline-block group">
-                production-grade AI systems
+                AI/LLMs into production products
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
               </span>{' '}
-              with a research-driven approach. Specializing in{' '}
+              and building scalable APIs. Specializing in{' '}
               <motion.span 
                 className="text-accent-primary font-medium"
                 whileHover={{ scale: 1.05 }}
-              >AI Agents</motion.span>,{' '}
+              >RAG pipelines & AI Agents</motion.span>,{' '}
               <motion.span 
                 className="text-accent-secondary font-medium"
                 whileHover={{ scale: 1.05 }}
-              >LLM fine-tuning</motion.span>,{' '}
+              >LLM fine-tuning (LoRA/QLoRA)</motion.span>,{' '}
               <motion.span 
                 className="text-blue-400 font-medium"
                 whileHover={{ scale: 1.05 }}
-              >Full Stack Web Development Applications</motion.span> and{' '}
+              >Python RESTful APIs</motion.span> and{' '}
               <motion.span 
                 className="text-pink-400 font-medium"
                 whileHover={{ scale: 1.05 }}
-              >privacy-first solutions</motion.span>.
+              >AI observability infrastructure</motion.span>.
             </motion.p>
 
             {/* CTA Buttons with enhanced effects */}
@@ -398,9 +398,7 @@ export default function Hero() {
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
-                  {stat.label === 'SIH Participant' ? 'SIH' : (
-                    <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-                  )}
+                  <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </div>
                 <div className="text-sm text-slate-400">{stat.label}</div>
               </div>

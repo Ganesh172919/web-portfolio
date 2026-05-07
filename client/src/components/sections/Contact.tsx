@@ -72,7 +72,7 @@ export default function Contact() {
       icon: Code,
       label: 'LeetCode',
       value: '500+ Problems',
-      href: 'https://leetcode.com/u/reddy_1859994',
+      href: 'https://leetcode.com/u/ganeshrgk1/',
       color: '#f59e0b',
     },
   ];
