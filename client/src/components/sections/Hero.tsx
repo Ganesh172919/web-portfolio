@@ -5,6 +5,7 @@ import { FileText, Sparkles, MessageSquare, ArrowRight, Rocket, Brain, Code2, Za
 import Image from 'next/image';
 import { personalInfo } from '@/data/resume';
 import { useEffect, useState } from 'react';
+import RotatingText from '@/components/interactive/RotatingText';
 
 // Animated counter component
 function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: string }) {
@@ -33,7 +34,7 @@ function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: strin
 }
 
 // Floating icon component
-function FloatingIcon({ icon: Icon, delay, x, y }: { icon: React.ElementType; delay: number; x: string; y: string }) {
+function FloatingIcon({ icon: Icon, delay, x, y }: { icon: React.ComponentType<{ className?: string; size?: number }>; delay: number; x: string; y: string }) {
   return (
     <motion.div
       className="absolute text-accent-primary/20"
@@ -254,8 +255,8 @@ export default function Hero() {
                     background: `linear-gradient(135deg, rgba(99, 102, 241, ${0.15 - index * 0.03}), rgba(139, 92, 246, ${0.15 - index * 0.03}))`,
                     border: '1px solid rgba(99, 102, 241, 0.2)',
                   }}
-                  whileHover={{ 
-                    scale: 1.05, 
+                  whileHover={{
+                    scale: 1.05,
                     borderColor: 'rgba(99, 102, 241, 0.5)',
                     boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
                   }}
@@ -263,6 +264,19 @@ export default function Hero() {
                   <span className="text-slate-200">{role}</span>
                 </motion.span>
               ))}
+            </motion.div>
+
+            {/* Rotating focus areas — auto-cycling text showing current work */}
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center justify-center lg:justify-start gap-2 mb-6 text-sm text-slate-500"
+            >
+              <span className="text-slate-600">Currently:</span>
+              <RotatingText
+                texts={personalInfo.rotatingTags}
+                interval={3000}
+                className="text-accent-primary font-medium"
+              />
             </motion.div>
 
             {/* Description with highlighted keywords */}

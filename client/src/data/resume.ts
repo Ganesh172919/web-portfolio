@@ -468,7 +468,49 @@ export const navigation = [
   { name: "Skills", href: "#skills" },
   { name: "Achievements", href: "#achievements" },
   { name: "Blog", href: "#blog" },
-  { name: "Contact", href: "#contact" }
+  { name: "Contact", href: "#contact" },
+  { name: "Learn", href: "/learn" }
+];
+
+// Blog preview data for the homepage Blog section
+// Keep in sync with markdown frontmatter in src/content/posts/
+export const blogPreview = [
+  {
+    slug: 'i-dont-trust-ai-tools',
+    title: "I Don't Trust AI Tools — Until I Understand the System Beneath Them",
+    excerpt: "Every week, a new AI tool launches. Agents. IDE copilots. AutoGPTs. But I noticed something: the more tools I used, the less I actually understood. AI tools don't remove complexity — they hide it.",
+    category: 'AI Philosophy',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
+    featured: true,
+  },
+  {
+    slug: 'why-reading-ai-research-feels-impossible',
+    title: 'Why Reading AI Research Feels Impossible (And How I Fixed It)',
+    excerpt: "AI papers feel like dense math, new terminology every paragraph, and assumptions you were 'supposed to already know'. For a long time, I thought maybe I'm not research material. That was wrong.",
+    category: 'Learning',
+    readTime: '6 min read',
+    date: 'Feb 4, 2026',
+    featured: true,
+  },
+  {
+    slug: 'building-ai-systems-taught-me-more',
+    title: 'Building AI Systems Taught Me More Than Any Model Ever Could',
+    excerpt: "I believed mastering AI meant knowing PyTorch deeply, training models from scratch, reading cutting-edge papers daily. What actually made me better? Building end-to-end AI systems — even with a basic model.",
+    category: 'AI Engineering',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
+    featured: false,
+  },
+  {
+    slug: 'ai-didnt-kill-coding',
+    title: "AI Didn't Kill Coding — It Exposed Who Actually Understands It",
+    excerpt: "People ask: 'Is coding dead?' What they really mean is: 'Is memorizing syntax still valuable?' Syntax was never the real skill. AI exposed this brutally.",
+    category: 'Industry Insights',
+    readTime: '5 min read',
+    date: 'Feb 4, 2026',
+    featured: false,
+  },
 ];
 
 export const socialLinks = [

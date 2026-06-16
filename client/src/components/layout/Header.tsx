@@ -2,8 +2,15 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import { Menu, X, Command, Github, Linkedin } from 'lucide-react';
 import { navigation, personalInfo } from '@/data/resume';
+
+/**
+ * Check if a navigation href is a route (not a hash link).
+ * Route links (e.g., /learn) use Next.js Link; hash links (e.g., #home) use scroll.
+ */
+const isRouteLink = (href: string) => href.startsWith('/');
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,8 +21,9 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Determine active section
-      const sections = navigation.map(item => item.href.replace('#', ''));
+      // Determine active section (only hash-based navigation items)
+      const hashItems = navigation.filter(item => !isRouteLink(item.href));
+      const sections = hashItems.map(item => item.href.replace('#', ''));
       for (const section of sections.reverse()) {
         const element = document.getElementById(section);
         if (element) {
@@ -76,25 +84,35 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navigation.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.href);
-                }}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                  activeSection === item.href.replace('#', '')
-                    ? 'text-white bg-white/10'
-                    : 'text-slate-400 hover:text-white hover:bg-white/5'
-                }`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item.name}
-              </motion.a>
-            ))}
+            {navigation.map((item) =>
+              isRouteLink(item.href) ? (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="px-4 py-2 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-300"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(item.href);
+                  }}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    activeSection === item.href.replace('#', '')
+                      ? 'text-white bg-white/10'
+                      : 'text-slate-400 hover:text-white hover:bg-white/5'
+                  }`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {item.name}
+                </motion.a>
+              )
+            )}
           </nav>
 
           {/* Right side actions */}
@@ -168,26 +186,37 @@ export default function Header() {
               exit={{ opacity: 0, scale: 0.95 }}
               className="absolute top-20 left-4 right-4 glass-card p-4"
             >
-              {navigation.map((item, index) => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
-                  }}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
-                    activeSection === item.href.replace('#', '')
-                      ? 'text-white bg-white/10'
-                      : 'text-slate-400 hover:text-white hover:bg-white/5'
-                  }`}
-                >
-                  {item.name}
-                </motion.a>
-              ))}
+              {navigation.map((item, index) =>
+                isRouteLink(item.href) ? (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block px-4 py-3 rounded-lg text-base font-medium text-slate-400 hover:text-white hover:bg-white/5 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <motion.a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                    }}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                      activeSection === item.href.replace('#', '')
+                        ? 'text-white bg-white/10'
+                        : 'text-slate-400 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {item.name}
+                  </motion.a>
+                )
+              )}
               
               {/* Mobile social links */}
               <div className="flex items-center gap-3 mt-4 pt-4 border-t border-white/10">
