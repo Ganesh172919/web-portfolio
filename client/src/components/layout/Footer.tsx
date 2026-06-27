@@ -2,11 +2,23 @@
 
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Heart, ArrowUp, Code } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 import { personalInfo, navigation } from '@/data/resume';
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  /** Prepend '/' to hash links when on non-home routes (e.g. /blog) */
+  const resolveHref = (href: string) => {
+    if (href.startsWith('#') && !isHomePage) {
+      return `/${href}`;
+    }
+    return href;
   };
 
   const currentYear = new Date().getFullYear();
@@ -24,12 +36,12 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-semibold text-lg">{personalInfo.name}</div>
-                <div className="text-sm text-slate-400">Generative AI Engineer</div>
+                <div className="text-sm text-slate-400">AI/ML Engineer & Startup Founder</div>
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Aspiring Generative AI Engineer integrating AI/LLMs into production products. 
-              Specializing in RAG pipelines, agentic AI workflows, and scalable Python APIs.
+              Passionate AI/ML engineer — LLM fine-tuning, RAG systems, generative AI, and
+              production ML deployments. A curious builder who thinks in systems.
             </p>
           </div>
 
@@ -40,7 +52,7 @@ export default function Footer() {
               {navigation.slice(0, 6).map((item) => (
                 <a
                   key={item.name}
-                  href={item.href}
+                  href={resolveHref(item.href)}
                   className="text-slate-400 hover:text-white text-sm transition-colors py-1"
                 >
                   {item.name}
@@ -62,7 +74,7 @@ export default function Footer() {
               </a>
               <div className="flex items-center gap-3 text-slate-400 text-sm">
                 <Code size={16} />
-                <span>500+ Problems Solved</span>
+                <span>100+ Students Mentored · 500+ Problems Solved</span>
               </div>
             </div>
 

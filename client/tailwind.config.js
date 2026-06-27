@@ -115,7 +115,7 @@ module.exports = {
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        'glow-sm': '0 0 15px rgba(99, 102, 241, 0.3)',
+        'glow-sm': '0 0 10px rgba(99, 102, 241, 0.3)',
         'glow-md': '0 0 30px rgba(99, 102, 241, 0.4)',
         'glow-lg': '0 0 50px rgba(99, 102, 241, 0.5)',
         'inner-glow': 'inset 0 0 20px rgba(99, 102, 241, 0.1)',

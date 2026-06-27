@@ -121,7 +121,7 @@ export default function Contact() {
             Let&apos;s <span className="text-gradient">Connect</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Interested in collaborating on AI projects, discussing research, or just want to chat?
+            Open to collaborations, opportunities, and open-source contributions. Let&apos;s build efficient AI systems together.
           </p>
         </motion.div>
 

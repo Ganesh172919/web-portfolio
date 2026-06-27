@@ -869,6 +869,30 @@ img[loading="lazy"].loaded {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Syntax highlighting (GitHub Dark theme) for blog code blocks */
+.prose-custom pre code .hljs-keyword,
+.prose-custom pre code .hljs-selector-tag,
+.prose-custom pre code .hljs-built_in { color: #ff7b72; }
+.prose-custom pre code .hljs-string,
+.prose-custom pre code .hljs-attr { color: #a5d6ff; }
+.prose-custom pre code .hljs-number,
+.prose-custom pre code .hljs-literal { color: #79c0ff; }
+.prose-custom pre code .hljs-comment,
+.prose-custom pre code .hljs-quote { color: #8b949e; font-style: italic; }
+.prose-custom pre code .hljs-function,
+.prose-custom pre code .hljs-title { color: #d2a8ff; }
+.prose-custom pre code .hljs-type,
+.prose-custom pre code .hljs-class { color: #ffa657; }
+.prose-custom pre code .hljs-variable,
+.prose-custom pre code .hljs-template-variable { color: #ffa657; }
+.prose-custom pre code .hljs-params { color: #c9d1d9; }
+.prose-custom pre code .hljs-meta { color: #79c0ff; }
+.prose-custom pre code .hljs-section { color: #79c0ff; font-weight: bold; }
+.prose-custom pre code .hljs-addition { color: #aff5b4; background: rgba(46, 160, 67, 0.15); }
+.prose-custom pre code .hljs-deletion { color: #ffdcd7; background: rgba(248, 81, 73, 0.15); }
+.prose-custom pre code .hljs-emphasis { font-style: italic; }
+.prose-custom pre code .hljs-strong { font-weight: bold; }
+
 .prose-custom pre code {
   @apply p-0 bg-transparent;
   font-size: 0.875rem;

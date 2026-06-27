@@ -2,15 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Code2, 
-  Brain, 
-  Bot, 
-  Server, 
-  Layout, 
+import {
+  Code2,
+  Brain,
+  Bot,
+  Server,
+  Layout,
   Database,
   Wrench,
-  Sparkles
+  Sparkles,
+  Cpu
 } from 'lucide-react';
 import { skills } from '@/data/resume';
 
@@ -20,6 +21,7 @@ const categoryIcons: Record<SkillCategory, typeof Code2> = {
   programming: Code2,
   aiml: Brain,
   aiAreas: Bot,
+  mlPipeline: Cpu,
   backend: Server,
   infrastructure: Layout,
   databases: Database,
@@ -30,6 +32,7 @@ const categoryColors: Record<SkillCategory, string> = {
   programming: '#6366f1',
   aiml: '#8b5cf6',
   aiAreas: '#ec4899',
+  mlPipeline: '#f97316',
   backend: '#10b981',
   infrastructure: '#f59e0b',
   databases: '#06b6d4',
@@ -108,7 +111,7 @@ export default function Skills() {
             Skills & <span className="text-gradient">Proficiency</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            A deep technical foundation across AI/ML, backend systems, and full-stack development.
+            Technical foundation across SLM training, AI/ML systems, full-stack development, and production infrastructure.
           </p>
         </motion.div>
 
@@ -241,10 +244,10 @@ export default function Skills() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           {[
-            { label: 'Core Focus', value: 'AI Agents', icon: Bot, color: '#ec4899' },
+            { label: 'Core Focus', value: 'LLM & RAG Systems', icon: Brain, color: '#8b5cf6' },
             { label: 'Primary Language', value: 'Python', icon: Code2, color: '#6366f1' },
-            { label: 'Framework', value: 'LangChain', icon: Brain, color: '#8b5cf6' },
-            { label: 'Backend', value: 'Node.js', icon: Server, color: '#10b981' },
+            { label: 'Specialization', value: 'Fine-Tuning & GenAI', icon: Bot, color: '#ec4899' },
+            { label: 'Thinking Style', value: 'Systems Thinker', icon: Cpu, color: '#f97316' },
           ].map((item, index) => (
             <motion.div
               key={item.label}

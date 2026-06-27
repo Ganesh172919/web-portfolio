@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FileText, Sparkles, MessageSquare, ArrowRight, Rocket, Brain, Code2, Zap } from 'lucide-react';
+import { FileText, Sparkles, MessageSquare, ArrowRight, Rocket, Brain, Code2, Zap, Users } from 'lucide-react';
 import Image from 'next/image';
 import { personalInfo } from '@/data/resume';
 import { useEffect, useState } from 'react';
@@ -111,10 +111,10 @@ export default function Hero() {
   };
 
   const stats = [
+    { value: 100, suffix: '+', label: 'Students Mentored', icon: Users, color: '#06b6d4' },
     { value: 500, suffix: '+', label: 'Problems Solved', icon: Code2, color: '#6366f1' },
-    { value: 4, suffix: '+', label: 'AI Projects Built', icon: Brain, color: '#8b5cf6' },
-    { value: 9.33, suffix: '', label: 'GenAI CGPA', icon: Zap, color: '#a855f7' },
-    { value: 100, suffix: '+', label: 'REST API Endpoints', icon: Rocket, color: '#ec4899' },
+    { value: 6, suffix: '+', label: 'Production AI Systems', icon: Brain, color: '#8b5cf6' },
+    { value: 1960, suffix: '', label: 'CodeChef Rating', icon: Zap, color: '#a855f7' },
   ];
 
   return (
@@ -284,28 +284,29 @@ export default function Hero() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed"
             >
-              Integrating{' '}
+              A curious, passionate builder who thrives on{' '}
               <span className="text-white font-semibold relative inline-block group">
-                AI/LLMs into production products
+                complex problems
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
               </span>{' '}
-              and building scalable APIs. Specializing in{' '}
-              <motion.span 
+              — deep thinking and systems thinking drive everything I build. Specializing in{' '}
+              <motion.span
                 className="text-accent-primary font-medium"
                 whileHover={{ scale: 1.05 }}
-              >RAG pipelines & AI Agents</motion.span>,{' '}
-              <motion.span 
+              >LLM fine-tuning & RAG systems</motion.span>,{' '}
+              <motion.span
                 className="text-accent-secondary font-medium"
                 whileHover={{ scale: 1.05 }}
-              >LLM fine-tuning (LoRA/QLoRA)</motion.span>,{' '}
-              <motion.span 
+              >generative AI & deep learning</motion.span>,{' '}
+              <motion.span
                 className="text-blue-400 font-medium"
                 whileHover={{ scale: 1.05 }}
-              >Python RESTful APIs</motion.span> and{' '}
-              <motion.span 
+              >production ML deployments</motion.span> and{' '}
+              <motion.span
                 className="text-pink-400 font-medium"
                 whileHover={{ scale: 1.05 }}
-              >AI observability infrastructure</motion.span>.
+              >multi-agent AI systems</motion.span>.
+              Deployed multiple real-world production systems. I learn fast and ship faster.
             </motion.p>
 
             {/* CTA Buttons with enhanced effects */}

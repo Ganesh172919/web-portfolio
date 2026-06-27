@@ -12,23 +12,25 @@ export const personalInfo = {
   linkedinUrl: "https://www.linkedin.com/in/j-ganesh-kumar-reddy-b65693274",
   location: "India",
   roles: [
-    "Generative AI Engineer",
-    "Full-Stack Developer",
-    "Open Source Contributor"
+    "AI/ML Engineer",
+    "LLM Fine-Tuning & RAG Systems",
+    "Startup Founder & Builder"
   ],
   rotatingTags: [
-    "Building AI Agents",
-    "LLM Fine-Tuning & RAG",
-    "Production-grade APIs",
-    "Multi-Agent Architectures",
-    "Privacy-First AI",
-    "Open Source Builder"
+    "LLM Fine-Tuning (LoRA/QLoRA/PEFT)",
+    "Building RAG Systems",
+    "Generative AI Applications",
+    "Deep Learning & Transformers",
+    "Multi-Agent Workflows",
+    "Production ML Systems",
+    "Systems Thinking",
+    "Solving Complex Problems"
   ],
-  summary: "Aspiring Generative AI Engineer pursuing B.Tech in Data Science & AI with a Minor in Generative AI (9.33 CGPA) from IIIT Dharwad. Hands-on experience integrating AI/LLMs into production products, building scalable Python RESTful APIs (FastAPI, Flask), and developing AI infrastructure including observability pipelines and caching mechanisms. Proficient in prompt engineering, model evaluation & fine-tuning (LoRA, QLoRA, PEFT), RAG pipelines, and agentic AI workflows (LangChain, LangGraph). Active open-source contributor with a startup founder mindset.",
+  summary: "Data Science & AI undergraduate (B.Tech, IIIT Dharwad — CGPA 8.35) with a Minor in Generative AI (CGPA 9.33). A curious, passionate builder who thrives on complex problems — deep thinking and systems thinking drive every project. Started coding at 15, founded an AI startup at 16. Specializing in LLM fine-tuning, RAG systems, generative AI, and production ML deployments. Shipped multiple real-world production systems for interactive learning, fixed complex bugs in distributed architectures, and learned new domains fast to deliver solutions. Mentored 100+ students. Always building something cool.",
   highlights: {
-    researcher: "Research-first approach with hands-on experiments in LLM fine-tuning (LoRA, QLoRA, PEFT), model evaluation with BLEU/ROUGE metrics, hallucination mitigation, and large context window optimization. Deep understanding of transformer architectures and agent reasoning patterns.",
-    learner: "Exceptional academic performance with 9.33 CGPA in GenAI Minor covering AI/ML/DL, LLMs, and AI Agents. Self-taught LangChain, LangGraph, and advanced prompting techniques. 500+ competitive programming problems solved — LeetCode Knight, CodeChef 4★.",
-    builder: "Shipped 4+ production-ready AI projects — from multi-agent financial systems to offline LLM deployments. Built 100+ REST API endpoints, AI observability pipelines, and distributed job processing systems. Focus on clean architecture, scalability, and real-world constraints."
+    researcher: "Deep-diving into LLM fine-tuning (LoRA/QLoRA/PEFT), generative AI architectures, RAG pipeline optimization, and foundational model training. A deep thinker who doesn't just use AI tools — I understand the systems beneath them and push their boundaries through hands-on experimentation.",
+    learner: "A curious mind that learns fast and thinks in systems. Started coding at 15, founded AI startup at 16. 9.33 CGPA in GenAI Minor. Competitive programmer — LeetCode Knight, CodeChef 4★ (1960). 500+ problems solved. I pick up new technologies quickly and apply them to real-world production problems. Mentored 100+ students on DSA, ML, and engineering.",
+    builder: "Passionate about building cool stuff that works in production. Deployed multiple real-world systems — multi-agent AI copilots, RAG-powered chatbots, automated ML pipelines, interactive learning platforms. I fix complex bugs, architect scalable solutions, and ship products that solve real problems. Every project is a system design challenge I enjoy solving."
   }
 };
 
@@ -64,19 +66,19 @@ export const projects = [
   {
     id: "personal-finance-assistant",
     title: "Personal Finance Assistant",
-    shortTitle: "Finance AI Agent",
-    subtitle: "AI-Powered Full-Stack Platform",
-    period: "Aug 2025 - Nov 2025",
-    technologies: ["Python", "LangChain", "LangGraph", "FastAPI", "Google Gemini API", "React.js", "Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "Docker", "Prometheus", "OpenTelemetry"],
-    category: "AI Agents",
-    description: "Integrated a multi-agent AI Copilot (LangGraph DAG routing + Google Gemini LLM) into the product, enabling AI-driven anomaly detection, budget reallocation, receipt OCR, and atomic multi-step financial plans.",
-    fullDescription: "A sophisticated multi-agent system that leverages LangChain and LangGraph to create intelligent financial planning assistants. Features autonomous agents for anomaly detection, budget reallocation, receipt OCR, and multi-step financial plans. Built with 100+ RESTful API endpoints, distributed job processing with BullMQ, and comprehensive AI observability with Prometheus + OpenTelemetry.",
+    shortTitle: "Finance AI Startup",
+    subtitle: "Open-Source AI Startup — Multi-Agent Financial Copilot",
+    period: "Aug 2025 - Present",
+    technologies: ["Python", "LangChain", "LangGraph", "FastAPI", "Google Gemini API", "React.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "Docker", "Prometheus", "OpenTelemetry"],
+    category: "Startup",
+    description: "Founder & lead engineer of an open-source multi-agent AI startup. LangGraph DAG routing + Google Gemini for anomaly detection, budget reallocation, receipt OCR, and autonomous financial planning — building toward production-scale deployment.",
+    fullDescription: "An open-source startup product: a sophisticated multi-agent financial AI copilot leveraging LangChain and LangGraph for intelligent financial planning. Features autonomous agents for anomaly detection, budget reallocation, receipt OCR, and multi-step financial plans. Production-grade back-end with 100+ RESTful API endpoints, distributed job processing with BullMQ, JWT/OAuth2 security, and comprehensive AI observability with Prometheus + OpenTelemetry. Currently focused on scaling and open-source community building.",
     highlights: [
+      "Startup founder — open-source multi-agent AI product",
       "Multi-agent AI Copilot with LangGraph DAG routing",
       "100+ RESTful API endpoints with Zod validation",
       "Redis caching + Prometheus + OpenTelemetry observability",
-      "BullMQ distributed job processing",
-      "JWT/OAuth2, TOTP 2FA, CSRF protection"
+      "BullMQ distributed job processing + JWT/OAuth2 + TOTP 2FA"
     ],
     architecture: {
       agents: ["Budget Analyzer", "Anomaly Detector", "Receipt OCR", "Goal Planner"],
@@ -86,7 +88,7 @@ export const projects = [
     challenges: [
       "Coordinating multiple agents for coherent responses",
       "Building AI observability with Prometheus + OpenTelemetry",
-      "Ensuring accuracy in financial calculations"
+      "Scaling open-source community and product adoption"
     ],
     githubUrl: "https://github.com/Ganesh172919/personal-finance",
     liveUrl: "#",
@@ -96,28 +98,29 @@ export const projects = [
     id: "medical-llm-application",
     title: "Medical LLM Application",
     shortTitle: "Medical LLM",
-    subtitle: "Domain Chatbot with Fine-Tuned LLM & RAG",
-    period: "Mar 2025 - Apr 2025",
-    technologies: ["Python", "PyTorch", "HuggingFace Transformers", "LoRA", "QLoRA", "PEFT", "Google Gemini API", "PubMed API", "FastAPI", "MongoDB", "WebSocket", "JWT", "pytest"],
+    subtitle: "Domain Chatbot with Fine-Tuned LLM & Advanced RAG",
+    period: "Mar 2025 - Present",
+    technologies: ["Python", "PyTorch", "HuggingFace Transformers", "LoRA", "QLoRA", "PEFT", "LangChain", "Google Gemini API", "PubMed API", "ChromaDB", "FastAPI", "MongoDB", "WebSocket", "JWT", "pytest"],
     category: "AI Agents",
-    description: "Fine-tuned domain-specific medical LLMs using LoRA, QLoRA, and PEFT on the MEDQUAD dataset with BLEU/ROUGE evaluation metrics. Built multi-stage RAG pipeline combining ChromaDB vector retrieval and PubMed API.",
-    fullDescription: "A comprehensive medical AI application featuring fine-tuned domain-specific LLMs, multi-stage RAG pipeline with ChromaDB and PubMed API, NLP-based query classification for intelligent routing between local model, Gemini API, and PubMed retrieval. Includes WebSocket streaming, JWT authentication, rate limiting, and comprehensive pytest test suite.",
+    description: "Domain-specific medical chatbot with multi-technique fine-tuning (LoRA, QLoRA, PEFT, adapter layers) on MEDQUAD dataset. Advanced RAG pipeline with ChromaDB vector retrieval, PubMed API evidence grounding, and NLP-based intelligent query routing for accurate, evidence-backed medical responses.",
+    fullDescription: "A comprehensive medical AI application featuring multi-technique LLM fine-tuning (LoRA, QLoRA, PEFT, adapter-based approaches) on the MEDQUAD dataset with systematic evaluation using BLEU/ROUGE metrics. Advanced multi-stage RAG pipeline combining ChromaDB vector retrieval with PubMed API for evidence-backed responses. NLP-based query classification intelligently routes prompts between local fine-tuned model, Gemini API, and PubMed retrieval. Features hybrid search (semantic + keyword), re-ranking for retrieval quality, context window optimization, and hallucination mitigation through source attribution. Includes WebSocket streaming, JWT authentication, rate limiting, and comprehensive pytest test suite.",
     highlights: [
-      "LLM fine-tuning with LoRA, QLoRA, PEFT on MEDQUAD",
-      "BLEU/ROUGE metrics for model evaluation",
-      "Multi-stage RAG: ChromaDB + PubMed API",
-      "NLP-based query classification & routing",
-      "WebSocket streaming + JWT auth + rate limiting"
+      "Multi-technique fine-tuning: LoRA, QLoRA, PEFT, adapter layers on MEDQUAD",
+      "BLEU/ROUGE systematic evaluation & statistical benchmarking",
+      "Advanced RAG: ChromaDB + PubMed API + hybrid search + re-ranking",
+      "NLP-based query classification & intelligent routing",
+      "Hallucination mitigation via source attribution & context optimization",
+      "WebSocket streaming + JWT auth + rate limiting + pytest"
     ],
     architecture: {
       agents: [],
-      flow: "Query → NLP Classification → Route (Local LLM / Gemini / PubMed) → RAG Pipeline → Response",
-      storage: "MongoDB + ChromaDB (Vector DB)"
+      flow: "Query → NLP Classification → Route (Local LLM / Gemini / PubMed) → Hybrid RAG (Semantic + Keyword) → Re-ranking → Source Attribution → Response",
+      storage: "MongoDB + ChromaDB (Vector DB) + PubMed API"
     },
     challenges: [
-      "Optimizing fine-tuning with limited compute",
-      "Building graceful degradation to Gemini API fallback",
-      "Ensuring medical response accuracy"
+      "Optimizing multi-technique fine-tuning with limited compute",
+      "Building advanced RAG with hybrid search and re-ranking for retrieval quality",
+      "Minimizing hallucinations through evidence-backed source attribution"
     ],
     githubUrl: "https://github.com/Ganesh172919/React-App-LLM",
     liveUrl: "#",
@@ -127,61 +130,93 @@ export const projects = [
     id: "synthetic-data-generator",
     title: "Synthetic Data Generator",
     shortTitle: "Synthetic Data Gen",
-    subtitle: "Automated LLM-Driven Data Pipeline",
-    period: "Dec 2025 - Jan 2026",
+    subtitle: "Fully Automated LLM-Driven Data Pipeline — Zero Manual Effort",
+    period: "Dec 2025 - Present",
     technologies: ["Python", "Mistral-7B-Instruct", "LoRA", "PEFT", "LLM Fine-Tuning", "Docker Compose", "Node.js", "Express.js", "React.js"],
     category: "AI Agents",
-    description: "Built a fully automated data generation pipeline where Mistral-7B (4-bit quantized) autonomously handles schema inference, domain adaptation, quality filtering, and deduplication — achieving 167 Q&A pairs/min on a T4 GPU.",
-    fullDescription: "An AI-native product built from the ground up: a fully automated data generation pipeline with Mistral-7B (4-bit quantized) handling schema inference, domain adaptation, quality filtering, and MD5-based deduplication. Features async buffered writing, checkpoint-based crash recovery, FlashAttention 2, and multi-format export (JSONL/CSV/JSON) compatible with HuggingFace fine-tuning pipelines.",
+    description: "Fully automated synthetic data pipeline where the LLM handles everything — schema inference, domain adaptation, prompt generation, quality filtering, deduplication, and validation — zero manual effort. Mistral-7B (4-bit quantized) achieves 167 Q&A pairs/min on a T4 GPU with complete data privacy.",
+    fullDescription: "A zero-manual-effort AI data generation system: the LLM autonomously handles the entire pipeline — schema inference, domain-specific prompt generation, quality scoring, statistical filtering, MD5-based deduplication, and format validation. Built with Mistral-7B (4-bit quantized) for high-throughput generation (167 Q&A pairs/min on T4 GPU) with FlashAttention 2, checkpoint-based crash recovery, and async buffered I/O. Features 6 domain templates, multi-format export (JSONL/CSV/JSON) compatible with HuggingFace fine-tuning pipelines, and Docker Compose deployment. The system requires no human intervention from schema input to final dataset export.",
     highlights: [
-      "167 Q&A pairs/min with Mistral-7B (4-bit quantized)",
+      "Fully automated — LLM handles schema, generation, filtering, dedup, validation",
+      "167 Q&A pairs/min with Mistral-7B (4-bit quantized) on T4 GPU",
       "Zero external API calls — complete data privacy",
       "FlashAttention 2 + checkpoint-based crash recovery",
-      "MD5-based deduplication + async buffered I/O",
-      "Docker Compose deployment with 6 domain templates"
+      "MD5 deduplication + quality scoring + async buffered I/O",
+      "Docker Compose deployment with 6 domain templates + multi-format export"
     ],
     architecture: {
-      agents: ["Schema Interpreter", "Domain Adapter", "Quality Filter", "Deduplication Engine"],
-      flow: "Schema Input → LLM Generation → Quality Filtering → Deduplication → Multi-format Export",
+      agents: ["Schema Interpreter", "Prompt Generator", "Domain Adapter", "Quality Scorer", "Deduplication Engine", "Format Validator"],
+      flow: "Schema Input → LLM Prompt Generation → Domain Adaptation → LLM Generation → Quality Scoring → Filtering → Deduplication → Validation → Multi-format Export",
       storage: "Local file system + JSONL/CSV/JSON export"
     },
     challenges: [
+      "Eliminating all manual intervention while maintaining data quality",
       "Optimizing Mistral-7B with 4-bit quantization for T4 GPU",
-      "Building fault-tolerant pipeline with crash recovery",
-      "Maintaining data quality without cloud resources"
+      "Building fault-tolerant pipeline with checkpoint-based crash recovery"
     ],
     githubUrl: "https://github.com/Ganesh172919/Synthetic-Data-Generator-1",
     liveUrl: "#",
     featured: true
   },
   {
-    id: "ml-pipelines-xai",
-    title: "ML Pipelines — Explainable AI & Predictive Analytics",
-    shortTitle: "ML Pipelines",
-    subtitle: "End-to-End ML with SHAP & LIME",
-    period: "2024",
-    technologies: ["Python", "scikit-learn", "PyTorch", "SHAP", "LIME", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-    category: "Full-Stack",
-    description: "Developed end-to-end machine learning pipelines for fraud detection, stroke prediction, and time-series forecasting with SHAP & LIME explainability, statistical analysis, feature engineering, and hyperparameter tuning.",
-    fullDescription: "End-to-end machine learning pipelines covering fraud detection, stroke prediction, and time-series forecasting. Features statistical analysis, feature engineering, hyperparameter tuning with scikit-learn and PyTorch. Applied SHAP & LIME for global and per-instance explainability with comprehensive data visualizations.",
+    id: "foundational-llm-training",
+    title: "Foundational LLM Training",
+    shortTitle: "Custom LLM",
+    subtitle: "Training a Small Language Model with Custom Architecture",
+    period: "2025 - Present",
+    technologies: ["Python", "PyTorch", "HuggingFace Transformers", "LoRA", "QLoRA", "PEFT", "FlashAttention", "Custom Architecture", "Tokenizers"],
+    category: "AI Agents",
+    description: "Training a very small foundational language model with custom architecture from scratch — focused on efficient reasoning capabilities through architectural innovations and targeted fine-tuning for improved chain-of-thought and problem-solving.",
+    fullDescription: "Research and engineering project focused on training a small foundational language model with a custom transformer architecture optimized for reasoning tasks. Involves designing efficient attention mechanisms, custom tokenization strategies, and training pipelines optimized for constrained hardware. Fine-tuning with LoRA/QLoRA/PEFT for improved chain-of-thought reasoning, mathematical problem-solving, and code generation. Emphasis on architectural efficiency — making small models reason well through smart design choices rather than scale.",
     highlights: [
-      "Fraud detection & stroke prediction models",
-      "SHAP & LIME explainability analysis",
-      "Statistical feature engineering",
-      "Comprehensive data visualizations",
-      "Hyperparameter tuning pipelines"
+      "Custom transformer architecture optimized for reasoning",
+      "Small model training on constrained hardware",
+      "Fine-tuning with LoRA/QLoRA/PEFT for chain-of-thought",
+      "Efficient attention mechanisms and tokenization",
+      "Targeted reasoning and problem-solving capabilities"
     ],
     architecture: {
       agents: [],
-      flow: "Data Loading → EDA → Feature Engineering → Model Training → SHAP/LIME Analysis → Evaluation",
-      storage: "Jupyter Notebook with documented experiments"
+      flow: "Architecture Design → Tokenizer Training → Pre-training → Fine-tuning (LoRA/QLoRA) → Evaluation → Iteration",
+      storage: "Custom training pipeline + HuggingFace Hub"
     },
     challenges: [
-      "Handling class imbalance in fraud detection",
-      "Implementing per-instance SHAP explanations",
-      "Optimizing time-series forecasting accuracy"
+      "Designing efficient architecture for small-scale reasoning",
+      "Training on constrained GPU hardware",
+      "Achieving competitive reasoning with minimal parameters"
     ],
     githubUrl: "https://github.com/Ganesh172919",
+    liveUrl: "#",
+    featured: true
+  },
+  {
+    id: "ai-auto-news",
+    title: "AI Auto News",
+    shortTitle: "Auto News",
+    subtitle: "Serverless AI-Powered Continuous News Platform",
+    period: "2025 - Present",
+    technologies: ["Python", "AI/ML", "Serverless", "Web Scraping", "NLP", "React.js", "API Integration"],
+    category: "Full-Stack",
+    description: "A serverless website for continuous automated news updation — AI-powered news aggregation, summarization, and real-time delivery without any manual intervention.",
+    fullDescription: "An AI-powered serverless news platform that continuously aggregates, summarizes, and delivers news without manual effort. Uses NLP for topic classification, automated summarization, and relevance scoring. Serverless architecture ensures zero-maintenance deployment with automatic scaling. Features real-time updates, personalized feeds, and AI-driven content curation.",
+    highlights: [
+      "Serverless architecture — zero maintenance, auto-scaling",
+      "AI-powered news aggregation and summarization",
+      "Continuous automated updation — no manual intervention",
+      "NLP-based topic classification and relevance scoring",
+      "Real-time delivery with personalized feeds"
+    ],
+    architecture: {
+      agents: [],
+      flow: "News Sources → AI Aggregation → NLP Classification → Summarization → Relevance Scoring → Serverless Delivery",
+      storage: "Serverless backend + CDN delivery"
+    },
+    challenges: [
+      "Building reliable automated news aggregation pipelines",
+      "Ensuring AI summarization accuracy and relevance",
+      "Serverless architecture design for continuous operation"
+    ],
+    githubUrl: "https://github.com/Ganesh172919/Problem_solve",
     liveUrl: "#",
     featured: false
   },
@@ -194,10 +229,10 @@ export const projects = [
     technologies: ["C++", "Python", "Algorithms", "Data Structures", "Dynamic Programming", "Graph Theory", "Segment Trees"],
     category: "Performance",
     description: "Curated repository of 500+ competitive programming solutions across LeetCode, CodeChef, and Codeforces — covering dynamic programming, graph algorithms, segment trees, binary search, and number theory.",
-    fullDescription: "A comprehensive repository of 500+ competitive programming solutions spanning LeetCode (Knight, 340+ problems, WC 435 Rank 553), CodeChef (4★, Rating 1960), and Codeforces (Pupil, Rating 1227). Covers dynamic programming, graph algorithms, segment trees, binary search, number theory, and advanced data structures.",
+    fullDescription: "A comprehensive repository of 500+ competitive programming solutions spanning LeetCode (Knight, 340+ problems, WC 435 Rank 553), CodeChef (4★, Rating 1960, Global Rank 1923), and Codeforces (Pupil, Rating 1227). Covers dynamic programming, graph algorithms, segment trees, binary search, number theory, and advanced data structures.",
     highlights: [
       "LeetCode Knight — 340+ problems, WC 435 Rank 553",
-      "CodeChef 4★ — Rating 1960",
+      "CodeChef 4★ — Rating 1960, Global Rank 1923",
       "Codeforces Pupil — Rating 1227",
       "500+ problems across platforms",
       "DP, graphs, segment trees, number theory"
@@ -212,7 +247,7 @@ export const projects = [
       "Optimizing solutions for tight time limits",
       "Implementing advanced data structures from scratch"
     ],
-    githubUrl: "https://github.com/Ganesh172919",
+    githubUrl: "https://github.com/Ganesh172919/Problem_solve",
     liveUrl: "#",
     featured: false
   }
@@ -232,26 +267,41 @@ export const skills = {
     ]
   },
   aiml: {
-    title: "AI / ML",
+    title: "AI / ML / DL",
     items: [
       { name: "Generative AI & LLMs", level: 92, featured: true },
+      { name: "LLM Fine-Tuning (LoRA/QLoRA/PEFT)", level: 90, featured: true },
+      { name: "RAG Systems & Pipelines", level: 92, featured: true },
+      { name: "Deep Learning (CNNs, RNNs, Transformers)", level: 88, featured: true },
+      { name: "Machine Learning (Classical + Modern)", level: 88, featured: true },
+      { name: "NLP & Text Processing", level: 88, featured: true },
       { name: "Prompt Engineering", level: 95, featured: true },
-      { name: "LLM Fine-Tuning (LoRA/QLoRA/PEFT)", level: 88, featured: true },
-      { name: "RAG Pipelines", level: 90, featured: true },
-      { name: "Model Evaluation", level: 85, featured: true },
-      { name: "NLP", level: 85 },
+      { name: "Model Evaluation & Benchmarking", level: 85 },
       { name: "Explainable AI (SHAP/LIME)", level: 80 }
     ]
   },
   aiAreas: {
     title: "AI Frameworks",
     items: [
+      { name: "PyTorch", level: 90, featured: true },
+      { name: "HuggingFace Transformers", level: 90, featured: true },
       { name: "LangChain", level: 92, featured: true },
       { name: "LangGraph", level: 90, featured: true },
-      { name: "HuggingFace Transformers", level: 88, featured: true },
-      { name: "PyTorch", level: 88, featured: true },
-      { name: "TensorFlow", level: 80 },
-      { name: "scikit-learn", level: 88, featured: true }
+      { name: "scikit-learn", level: 88, featured: true },
+      { name: "TensorFlow / Keras", level: 80 },
+      { name: "OpenAI / Gemini APIs", level: 90, featured: true }
+    ]
+  },
+  mlPipeline: {
+    title: "ML & Data Pipeline",
+    items: [
+      { name: "Feature Engineering", level: 85, featured: true },
+      { name: "Data Preprocessing & Augmentation", level: 88 },
+      { name: "Vector Databases (ChromaDB, FAISS)", level: 85, featured: true },
+      { name: "Embedding Models & Semantic Search", level: 88, featured: true },
+      { name: "Model Quantization (4-bit, GPTQ)", level: 82 },
+      { name: "Distributed Training", level: 75 },
+      { name: "MLOps & Experiment Tracking", level: 78 }
     ]
   },
   backend: {
@@ -282,7 +332,7 @@ export const skills = {
     items: [
       { name: "MongoDB", level: 88, featured: true },
       { name: "PostgreSQL", level: 82 },
-      { name: "ChromaDB (Vector DB)", level: 80, featured: true },
+      { name: "ChromaDB (Vector DB)", level: 85, featured: true },
       { name: "Redis", level: 82, featured: true },
       { name: "MySQL", level: 78 }
     ]
@@ -296,7 +346,7 @@ export const skills = {
       { name: "Pandas / NumPy", level: 90 },
       { name: "Matplotlib / Seaborn", level: 82 },
       { name: "AWS (basics)", level: 65 },
-      { name: "Hugging Face Hub", level: 80 }
+      { name: "Hugging Face Hub", level: 85 }
     ]
   }
 };
@@ -314,7 +364,7 @@ export const achievements = {
     {
       platform: "CodeChef",
       stats: "4★ · Rating 1960",
-      rating: "Active Competitor",
+      rating: "Global Rank 1923 · Country Rank 1468",
       icon: "chef-hat",
       color: "#5B4638",
       url: "https://www.codechef.com/users/ganesh_352004"
@@ -322,7 +372,7 @@ export const achievements = {
     {
       platform: "Codeforces",
       stats: "Pupil · Rating 1227",
-      rating: "Active Competitor",
+      rating: "Max Rating 1227",
       icon: "trophy",
       color: "#318CE7",
       url: "https://codeforces.com/profile/Ganesh_iiit"
@@ -339,19 +389,19 @@ export const achievements = {
   hackathons: [
     {
       name: "Smart India Hackathon (SIH)",
-      achievement: "Participant",
+      achievement: "Participant — AI-powered solution under competitive constraints",
       year: "2025",
       color: "#10b981"
     },
     {
       name: "Adobe GenAI Hackathon",
-      achievement: "Participant",
+      achievement: "Participant — GenAI product prototyping",
       year: "2025",
       color: "#FF0000"
     },
     {
       name: "Amazon ML Challenge",
-      achievement: "Participant",
+      achievement: "Participant — ML pipeline under time constraints",
       year: "2025",
       color: "#FF9900"
     }
@@ -379,32 +429,32 @@ export const achievements = {
     }
   ],
   startup: {
-    title: "Startup & Open Source",
-    description: "Founder of an open-source multi-agent AI startup (open-sourcing LangGraph financial copilot); active open-source contributor to NanaChat and community AI projects."
+    title: "Startup Founder & Open Source",
+    description: "Founded an open-source AI startup at 16, started coding at 15. Building efficient local AI systems — multi-agent financial copilot (LangGraph), domain-specific SLM fine-tuning pipelines, and automated synthetic data generation. Mentored 100+ students on DSA, internships, career guidance, and web development. Active open-source contributor to NanaChat and community AI projects."
   }
 };
 
 export const technicalExperience = [
   {
     id: 1,
-    title: "AI Engineering & Product Integration",
+    title: "AI Engineering & Startup Product Development",
     period: "2024 – Present",
-    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Google Gemini", "HuggingFace Transformers", "LoRA", "QLoRA", "Prompt Engineering", "Model Evaluation", "Docker"],
+    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Google Gemini", "HuggingFace Transformers", "LoRA", "QLoRA", "PyTorch", "Prompt Engineering", "Model Evaluation", "Docker"],
     highlights: [
-      "Integrated AI technologies into existing products and built AI-native applications from the ground up across 4+ repositories — conducting prompt engineering, model evaluation, and LLM fine-tuning (LoRA/QLoRA/PEFT) for domain-specific use cases.",
-      "Orchestrated multi-agent AI systems via LangGraph DAG routing and built multi-stage RAG pipelines with vector retrieval.",
-      "Developed AI infrastructure including observability tools (Prometheus, OpenTelemetry), Redis caching mechanisms, checkpoint-based crash recovery, and 4-bit quantized model serving."
+      "Founded and building an open-source AI startup — independently designed and shipped production-grade multi-agent financial AI copilot (LangGraph + Gemini), medical LLM chatbot with advanced RAG, and fully automated synthetic data pipeline across 4+ repositories.",
+      "Training foundational small language models with custom architectures; fine-tuning domain-specific LLMs using LoRA/QLoRA/PEFT with BLEU/ROUGE evaluation and systematic benchmarking.",
+      "Orchestrated multi-agent AI systems via LangGraph DAG routing, built multi-stage RAG pipelines with hybrid search and re-ranking, and developed AI infrastructure with Prometheus observability and distributed processing."
     ]
   },
   {
     id: 2,
-    title: "Software & API Development",
+    title: "Full-Stack & Back-End Systems Engineering",
     period: "2024 – Present",
-    technologies: ["Python", "FastAPI", "Node.js", "Express.js", "React.js", "TypeScript", "MongoDB", "Redis", "BullMQ", "JWT/OAuth2", "pytest", "Docker"],
+    technologies: ["Python", "FastAPI", "Node.js", "Express.js", "React.js", "TypeScript", "MongoDB", "Redis", "BullMQ", "JWT/OAuth2", "TOTP 2FA", "pytest", "Docker", "Prometheus", "OpenTelemetry"],
     highlights: [
-      "Designed and developed RESTful APIs using Python to integrate AI models seamlessly into applications; built production-grade back-end systems (100+ endpoints, Zod validation, versioned routing) with clean layered architecture and SOLID principles.",
-      "Collaborated with cross-functional teams and participated in code reviews; wrote and maintained unit tests (pytest, unittest) to ensure AI model reliability and quality assurance.",
-      "Applied best practices in coding, testing, and documentation across all projects; optimized AI applications for performance, scalability, and security."
+      "Designed and shipped production-grade full-stack systems — REST API architecture (100+ endpoints, Zod validation, versioned routing) to React 18 TypeScript frontends — applying clean layered architecture, SOLID principles, and OOP design patterns.",
+      "Built distributed, fault-tolerant back-end services with Redis-backed BullMQ job queues, WebSocket real-time streaming, checkpoint-based crash recovery, and async buffered processing for high-throughput workloads.",
+      "Architected secure multi-tenant services with JWT/OAuth2, TOTP 2FA, CSRF protection, bcrypt hashing, OTP email verification, and rate limiting — enterprise-grade security standards."
     ]
   }
 ];
@@ -412,49 +462,60 @@ export const technicalExperience = [
 export const openSourceContributions = [
   {
     name: "NanaChat — Open-Source AI Chat Platform",
-    description: "Contributed to NanaChat, an open-source AI-powered chat platform — implementing feature enhancements, performance improvements, and bug fixes across the full-stack codebase.",
+    description: "Contributing to NanaChat, an open-source AI-powered chat platform — implementing feature enhancements, performance improvements, and bug fixes across the full-stack codebase. Engaging in code reviews and community-driven development.",
     githubUrl: "https://github.com/Ganesh172919"
   },
   {
-    name: "Multi-Agent LangGraph Financial AI Copilot",
-    description: "Actively building toward open-sourcing the multi-agent LangGraph financial AI copilot as a standalone open-source product — demonstrating commitment to community-driven AI tooling.",
+    name: "Personal Finance AI Copilot — Open-Source Startup",
+    description: "Founder & lead engineer — open-sourcing the multi-agent LangGraph financial AI copilot as a standalone product. Building efficient local AI systems with domain-specific fine-tuning pipelines and automated synthetic data generation.",
     githubUrl: "https://github.com/Ganesh172919/personal-finance"
+  },
+  {
+    name: "Problem Solving Repository",
+    description: "Maintaining a comprehensive repository of 500+ competitive programming solutions and AI/ML project implementations — open-source contributions to the developer community.",
+    githubUrl: "https://github.com/Ganesh172919/Problem_solve"
   }
 ];
 
 export const research = {
   current: [
     {
-      title: "LLM Fine-Tuning Experiments",
-      description: "Exploring efficient fine-tuning techniques for domain-specific LLMs using LoRA and QLoRA approaches",
+      title: "Foundational SLM Training",
+      description: "Training a very small language model with custom architecture — focused on efficient reasoning through architectural innovations and targeted fine-tuning",
       status: "In Progress",
-      tags: ["LLMs", "Fine-Tuning", "LoRA"]
+      tags: ["SLMs", "Custom Architecture", "Fine-Tuning", "Reasoning"]
     },
     {
-      title: "Large Context Window Exploration",
-      description: "Investigating methods to effectively utilize and optimize large context windows in modern LLMs",
-      status: "Research",
-      tags: ["Context Windows", "LLMs", "Optimization"]
+      title: "LLM Fine-Tuning Experiments",
+      description: "Systematic experimentation with LoRA, QLoRA, PEFT, and adapter-based fine-tuning across multiple LLM architectures — optimizing for domain-specific reasoning, code generation, and medical QA with BLEU/ROUGE benchmarking",
+      status: "Active",
+      tags: ["LoRA", "QLoRA", "PEFT", "Fine-Tuning", "Evaluation"]
     },
     {
-      title: "AI Hallucination Mitigation",
-      description: "Developing techniques to reduce hallucinations in LLM outputs through retrieval augmentation and validation",
+      title: "RAG Pipeline Optimization",
+      description: "Building and optimizing advanced RAG systems — hybrid search (semantic + keyword), re-ranking strategies, context window management, and hallucination mitigation through source attribution",
+      status: "Active",
+      tags: ["RAG", "Vector DB", "Hybrid Search", "Re-ranking"]
+    },
+    {
+      title: "Multi-Agent Workflow Systems",
+      description: "Designing and scaling multi-agent systems with LangGraph for complex task automation and financial AI workflows",
       status: "Ongoing",
-      tags: ["RAG", "Validation", "Quality"]
+      tags: ["LangGraph", "Multi-Agent", "Automation"]
     }
   ],
   future: [
     {
-      title: "Agent Memory & Planning",
-      description: "Building persistent memory systems for AI agents with long-term planning capabilities"
+      title: "Generative AI Applications",
+      description: "Exploring novel generative AI applications — synthetic data pipelines, AI-powered content creation, and autonomous research agents"
     },
     {
-      title: "Multi-Modal Agents",
-      description: "Extending agent architectures to handle vision, audio, and text seamlessly"
+      title: "SLM Edge Inference",
+      description: "Optimizing small language models for efficient edge deployment and real-time inference on constrained hardware"
     },
     {
-      title: "Federated Learning for Privacy",
-      description: "Implementing privacy-preserving model training across distributed systems"
+      title: "Production ML Systems",
+      description: "Building robust ML pipelines — model versioning, A/B testing, drift detection, and automated retraining for production AI systems"
     }
   ]
 };
@@ -476,38 +537,47 @@ export const navigation = [
 // Keep in sync with markdown frontmatter in src/content/posts/
 export const blogPreview = [
   {
+    slug: 'ai-system-design-critical-problems',
+    title: "Designing AI Systems That Solve Critical Problems — A Practical Framework",
+    excerpt: "Most AI projects fail not because of bad models, but because of bad system design. Here's the DARTS framework I use to design AI systems that actually solve critical real-world problems.",
+    category: 'System Design',
+    readTime: '12 min read',
+    date: 'Jun 27, 2026',
+    featured: true,
+  },
+  {
     slug: 'i-dont-trust-ai-tools',
     title: "I Don't Trust AI Tools — Until I Understand the System Beneath Them",
-    excerpt: "Every week, a new AI tool launches. Agents. IDE copilots. AutoGPTs. But I noticed something: the more tools I used, the less I actually understood. AI tools don't remove complexity — they hide it.",
+    excerpt: "Every week, a new AI tool launches. But the more tools I used, the less I actually understood. AI tools don't remove complexity — they hide it. Here's how I learned to think in systems.",
     category: 'AI Philosophy',
-    readTime: '5 min read',
+    readTime: '8 min read',
     date: 'Feb 4, 2026',
     featured: true,
   },
   {
     slug: 'why-reading-ai-research-feels-impossible',
     title: 'Why Reading AI Research Feels Impossible (And How I Fixed It)',
-    excerpt: "AI papers feel like dense math, new terminology every paragraph, and assumptions you were 'supposed to already know'. For a long time, I thought maybe I'm not research material. That was wrong.",
+    excerpt: "AI papers feel like dense math, new terminology every paragraph, and assumptions you were 'supposed to already know'. The problem wasn't my intelligence — it was my approach.",
     category: 'Learning',
-    readTime: '6 min read',
+    readTime: '7 min read',
     date: 'Feb 4, 2026',
     featured: true,
   },
   {
     slug: 'building-ai-systems-taught-me-more',
     title: 'Building AI Systems Taught Me More Than Any Model Ever Could',
-    excerpt: "I believed mastering AI meant knowing PyTorch deeply, training models from scratch, reading cutting-edge papers daily. What actually made me better? Building end-to-end AI systems — even with a basic model.",
+    excerpt: "I believed mastering AI meant knowing PyTorch deeply. What actually made me better? Building end-to-end AI systems — because most failures aren't model failures, they're system failures.",
     category: 'AI Engineering',
-    readTime: '5 min read',
+    readTime: '7 min read',
     date: 'Feb 4, 2026',
     featured: false,
   },
   {
     slug: 'ai-didnt-kill-coding',
     title: "AI Didn't Kill Coding — It Exposed Who Actually Understands It",
-    excerpt: "People ask: 'Is coding dead?' What they really mean is: 'Is memorizing syntax still valuable?' Syntax was never the real skill. AI exposed this brutally.",
+    excerpt: "People ask: 'Is coding dead?' Syntax was never the real skill. AI exposed this brutally — and created a clear split between developers who understand systems and those who just write code.",
     category: 'Industry Insights',
-    readTime: '5 min read',
+    readTime: '6 min read',
     date: 'Feb 4, 2026',
     featured: false,
   },

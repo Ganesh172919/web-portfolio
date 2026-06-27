@@ -48,8 +48,8 @@ export default function Experience() {
             Technical <span className="text-gradient">Experience</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Hands-on experience building AI-native products, integrating LLMs into production,
-            and developing production-grade backend systems.
+            AI/ML engineer and startup founder — deploying real-world production systems,
+            building RAG pipelines, fine-tuning LLMs, and fixing complex bugs in distributed architectures.
           </p>
         </motion.div>
 

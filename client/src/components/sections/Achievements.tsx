@@ -1,17 +1,18 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { 
-  Trophy, 
-  Code, 
-  Award, 
+import {
+  Trophy,
+  Code,
+  Award,
   GraduationCap,
   Medal,
   Target,
   Flame,
   Rocket,
   ExternalLink,
-  Star
+  Star,
+  Users
 } from 'lucide-react';
 import { achievements } from '@/data/resume';
 
@@ -45,8 +46,8 @@ export default function Achievements() {
             Achievements & <span className="text-gradient">Recognition</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Competitive programming excellence, hackathons, and academic achievements — proof of consistent 
-            dedication and problem-solving ability.
+            Competitive programming excellence, hackathons, startup founder, and academic achievements —
+            proof of consistent dedication, problem-solving ability, and entrepreneurial drive.
           </p>
         </motion.div>
 
@@ -194,6 +195,44 @@ export default function Achievements() {
           </motion.div>
         </div>
 
+        {/* Mentoring & Community */}
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-3 mb-8"
+          >
+            <Users className="text-cyan-500" size={24} />
+            <h3 className="heading-sm">Mentoring & Community</h3>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-card p-6 border-cyan-500/20 hover:border-cyan-500/40 transition-all relative overflow-hidden"
+          >
+            <motion.div
+              className="absolute inset-0 opacity-20"
+              style={{ background: 'radial-gradient(circle at top left, rgba(6, 182, 212, 0.2), transparent 60%)' }}
+            />
+            <div className="relative z-10 flex items-start gap-4">
+              <div className="p-3 rounded-xl bg-cyan-500/10 shrink-0">
+                <Users size={24} className="text-cyan-400" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white text-lg mb-2">Mentored 100+ Students</h4>
+                <p className="text-slate-400 leading-relaxed">
+                  Guided 100+ students on Data Structures & Algorithms, internship preparation, career guidance,
+                  and web development. Started coding at 15, founded an AI startup at 16 — passionate about
+                  helping the next generation of engineers build real-world skills.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
         {/* Academic Excellence */}
         <div>
           <motion.div
@@ -238,10 +277,10 @@ export default function Achievements() {
           className="mt-16 glass-card p-8 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
+            { value: '100+', label: 'Students Mentored', icon: Users },
             { value: '500+', label: 'Problems Solved', icon: Code },
+            { value: '1960', label: 'CodeChef Rating', icon: Award },
             { value: 'Knight', label: 'LeetCode Rank', icon: Target },
-            { value: 'Top 5%', label: 'JEE Mains', icon: Trophy },
-            { value: '4★', label: 'CodeChef Rating', icon: Award },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

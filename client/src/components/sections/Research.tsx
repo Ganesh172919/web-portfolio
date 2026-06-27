@@ -28,6 +28,7 @@ export default function Research() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'In Progress': return 'text-emerald-400 bg-emerald-400/10';
+      case 'Active': return 'text-emerald-400 bg-emerald-400/10';
       case 'Research': return 'text-blue-400 bg-blue-400/10';
       case 'Ongoing': return 'text-amber-400 bg-amber-400/10';
       default: return 'text-slate-400 bg-slate-400/10';
@@ -53,8 +54,8 @@ export default function Research() {
             Experiments & <span className="text-gradient">Exploration</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            Continuous learning through hands-on experimentation. Bridging the gap between 
-            cutting-edge research and practical implementation.
+            Deep-diving into LLM fine-tuning, RAG systems, generative AI, and deep learning through
+            hands-on experimentation. Every experiment bridges cutting-edge research and production reality.
           </p>
         </motion.div>
 
@@ -164,9 +165,9 @@ export default function Research() {
           <Sparkles className="text-accent-primary mx-auto mb-4" size={32} />
           <h4 className="heading-sm mb-4">Research Philosophy</h4>
           <p className="text-slate-400 leading-relaxed">
-            I believe in learning by building. Every experiment is an opportunity to understand 
-            the nuances of AI systems—what works, what doesn&apos;t, and why. The goal is not just 
-            to replicate papers, but to internalize concepts deeply enough to apply them creatively.
+            I believe in building efficient systems from first principles. Training small language models
+            with custom architectures, fine-tuning for reasoning, and shipping production-grade AI products.
+            Every experiment is a step toward making AI accessible, local, and privacy-preserving.
           </p>
         </motion.div>
       </div>

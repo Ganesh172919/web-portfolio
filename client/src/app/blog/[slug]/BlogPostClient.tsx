@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -27,6 +27,13 @@ export default function BlogPostClient({
   prevPost: BlogPost | null;
   nextPost: BlogPost | null;
 }) {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -52,6 +59,12 @@ export default function BlogPostClient({
 
   return (
     <div className="min-h-screen bg-bg-primary">
+      {/* Reading Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary z-50 origin-left"
+        style={{ scaleX }}
+      />
+
       {/* Header */}
       <div className="relative pt-28 pb-12">
         <div className="container-custom max-w-4xl">
@@ -152,6 +165,23 @@ export default function BlogPostClient({
           </ReactMarkdown>
         </div>
       </motion.article>
+
+      {/* Author Bio */}
+      <div className="container-custom max-w-4xl pb-12">
+        <div className="glass-card p-6 flex items-start gap-4">
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent-primary to-accent-secondary flex items-center justify-center text-white text-xl font-bold shrink-0">
+            JG
+          </div>
+          <div>
+            <h4 className="font-semibold text-white text-lg mb-1">J. Ganesh Kumar Reddy</h4>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              SLM Researcher & Startup Founder. Started coding at 15, founded an AI startup at 16.
+              Building efficient local AI systems and mentoring 100+ students on DSA, internships,
+              career guidance, and web development.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Post Navigation */}
       <div className="container-custom max-w-4xl pb-20">

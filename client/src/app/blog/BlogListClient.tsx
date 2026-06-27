@@ -17,6 +17,7 @@ import {
   Layers,
   Lightbulb,
   Tag,
+  Network,
 } from 'lucide-react';
 import type { BlogPost } from '@/lib/blog';
 
@@ -25,6 +26,7 @@ const categoryIcons: Record<string, typeof Brain> = {
   'Learning': FileText,
   'AI Engineering': Layers,
   'Industry Insights': Lightbulb,
+  'System Design': Network,
 };
 
 export default function BlogListClient({

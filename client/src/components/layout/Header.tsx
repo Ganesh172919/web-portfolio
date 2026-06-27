@@ -78,7 +78,7 @@ export default function Header() {
               <div className="font-semibold text-white group-hover:text-accent-primary transition-colors">
                 {personalInfo.firstName}
               </div>
-              <div className="text-xs text-slate-400">Generative AI Engineer</div>
+              <div className="text-xs text-slate-400">AI/ML Engineer & Founder</div>
             </div>
           </motion.a>
 
@@ -123,7 +123,7 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
               className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 text-sm text-slate-400 hover:border-white/20 hover:text-white transition-all"
               onClick={() => {
-                // Command palette functionality can be added here
+                window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true }));
               }}
             >
               <Command size={14} />

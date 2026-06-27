@@ -2,18 +2,19 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ExternalLink, 
-  Github, 
-  ChevronRight, 
-  Bot, 
-  Layers, 
+import {
+  ExternalLink,
+  Github,
+  ChevronRight,
+  Bot,
+  Layers,
   Zap,
-  Filter
+  Filter,
+  Rocket
 } from 'lucide-react';
 import { projects } from '@/data/resume';
 
-const categories = ['All', 'AI Agents', 'Full-Stack', 'Performance'];
+const categories = ['All', 'Startup', 'AI Agents', 'Full-Stack', 'Performance'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -24,6 +25,7 @@ export default function Projects() {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
+      case 'Startup': return Rocket;
       case 'AI Agents': return Bot;
       case 'Full-Stack': return Layers;
       case 'Performance': return Zap;
@@ -47,8 +49,8 @@ export default function Projects() {
             Production-Grade <span className="text-gradient">AI Projects</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto mb-8">
-            Real systems built with real constraints. Each project represents a deep dive 
-            into solving complex problems with AI-first architectures.
+            Production-grade AI systems built with real constraints. From LLM fine-tuning and RAG systems
+            to multi-agent architectures and interactive learning platforms — each project solves complex real-world problems.
           </p>
 
           {/* Category Filter */}
@@ -178,7 +180,9 @@ export default function Projects() {
                     </div>
                     
                     <motion.a
-                      href={`#project-${project.id}`}
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-1.5 text-sm text-accent-primary hover:text-accent-secondary transition-colors"
                       whileHover={{ x: 5 }}
                     >

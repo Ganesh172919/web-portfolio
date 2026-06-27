@@ -19,6 +19,7 @@
  */
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Error({
   error,
@@ -27,6 +28,8 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const router = useRouter();
+
   useEffect(() => {
     // Log error to monitoring service in production
     // TODO: Replace with proper error tracking (e.g., Sentry, PostHog)
@@ -70,7 +73,7 @@ export default function Error({
             Try Again
           </button>
           <button
-            onClick={() => window.location.href = '/'}
+            onClick={() => router.push('/')}
             className="btn-ghost px-6 py-3 rounded-xl font-medium"
           >
             Go Home

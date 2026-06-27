@@ -71,7 +71,7 @@ export default function Home() {
       <Header />
       
       {/* Main Content */}
-      <main className="relative z-10">
+      <div className="relative z-10">
         {/* Hero / Landing Section */}
         <Hero />
         
@@ -98,7 +98,7 @@ export default function Home() {
         
         {/* Contact Section */}
         <Contact />
-      </main>
+      </div>
       
       {/* Footer */}
       <Footer />

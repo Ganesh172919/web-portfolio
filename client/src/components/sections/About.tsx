@@ -22,20 +22,20 @@ export default function About() {
   const coreHighlights = [
     {
       icon: FlaskConical,
-      title: 'Researcher',
-      description: 'Research-first approach with hands-on experiments in LLM fine-tuning, hallucination mitigation, and large context window optimization. Deep understanding of transformer architectures.',
+      title: 'AI/ML Engineer & Researcher',
+      description: 'Deep-diving into LLM fine-tuning (LoRA/QLoRA/PEFT), generative AI architectures, RAG systems, and deep learning. A deep thinker who understands the systems beneath AI tools — not just using them, but building and optimizing them from scratch.',
       color: '#8b5cf6',
     },
     {
       icon: Zap,
-      title: 'Efficient Learner',
-      description: '9.33 CGPA in GenAI Minor covering AI/ML/DL, LLMs, and AI Agents. Self-taught LangChain, LangGraph, and advanced prompting. 500+ competitive programming problems solved.',
+      title: 'Curious & Fast Learner',
+      description: 'A curious mind that picks up new technologies fast and applies them to real-world problems. Started coding at 15, founded AI startup at 16. 9.33 CGPA in GenAI Minor. I learn by building — every project teaches me something new about systems thinking.',
       color: '#f59e0b',
     },
     {
       icon: Wrench,
-      title: 'Builder',
-      description: 'Shipped 4+ production-ready AI projects—from multi-agent financial systems to offline LLM deployments. 40% performance optimization. Focus on clean architecture and scalability.',
+      title: 'Passionate Builder',
+      description: 'I build cool stuff that works in production. Deployed multiple real-world systems — AI copilots, RAG chatbots, ML pipelines, interactive learning platforms. I fix complex bugs, architect scalable solutions, and ship products that solve real problems.',
       color: '#10b981',
     },
   ];
@@ -43,23 +43,23 @@ export default function About() {
   const philosophyItems = [
     {
       icon: Brain,
-      title: 'AI-First Thinking',
-      description: 'Building systems where AI is the core intelligence, not just an add-on. Focused on autonomous agents that reason, plan, and execute.',
+      title: 'Deep Thinking & Systems Design',
+      description: 'I approach every problem by understanding the full system — not just the model, but the data pipeline, deployment, monitoring, and failure modes. Systems thinking turns complex problems into solvable ones.',
     },
     {
       icon: Server,
-      title: 'Backend-First Architecture',
-      description: 'Strong foundations in system design, API architecture, and scalable infrastructure. The backend powers everything.',
+      title: 'Production-First Engineering',
+      description: 'Every project is a product. I deploy real-world production systems — not prototypes. Focused on reliability, scalability, observability, and solving real problems that users actually face.',
     },
     {
       icon: Shield,
-      title: 'Privacy-Preserving AI',
-      description: 'Committed to building AI that respects user privacy. Offline LLMs, local inference, and data sovereignty.',
+      title: 'Learn Fast, Ship Faster',
+      description: 'I pick up new technologies quickly and apply them to real problems. From LLM fine-tuning to distributed systems — I learn by building and shipping. Speed of learning is my biggest advantage.',
     },
     {
       icon: Lightbulb,
-      title: 'Research-Driven Engineering',
-      description: 'Every project starts with understanding the latest research. Building bridges between papers and production.',
+      title: 'Research Meets Reality',
+      description: 'Every experiment bridges cutting-edge research and production implementation. LLM fine-tuning, RAG optimization, generative AI — I don\'t just read papers, I build systems that prove the ideas work.',
     },
   ];
 
@@ -76,11 +76,11 @@ export default function About() {
         >
           <span className="label text-accent-primary mb-3 block">About Me</span>
           <h2 className="heading-lg mb-4">
-            How I Think About <span className="text-gradient">AI Systems</span>
+            A Curious Builder Who Thinks in <span className="text-gradient">Systems</span>
           </h2>
           <p className="body-md max-w-2xl mx-auto">
-            I approach AI engineering with a systems mindset—understanding how to integrate 
-            LLMs into production products, build scalable APIs, and create robust AI infrastructure.
+            I approach AI engineering with deep thinking and systems thinking — understanding the full stack
+            from model architecture to production deployment. A passionate builder who learns fast and ships real products.
           </p>
         </motion.div>
 
